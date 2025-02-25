@@ -1,5 +1,5 @@
 import { Card } from "./components/Card";
-import { Tests } from "./Tests";
+import { Tests } from "./components/Tests";
 
 export default function Home() {
   let cardData = [
@@ -27,17 +27,30 @@ export default function Home() {
       imageId:
         "(Fidget spinners are a type of stim toy autistic individual use for stimming)",
       description:
-        "Stimming is not only hand-flapping, it can come in many different forms. Take a look at ",
+        "Stimming is not only hand-flapping, it can come in many different forms. Read more to learn about the variety of stimming.",
+    },
+  ];
+  let testData = [
+    {
+      id: 0,
+      imageSrc: "/tbh.png",
+      imageId:
+        "(Created by Twitter user @acmeiku, the 'tbh creature' is jokingly used as a symbol of ASD online)",
+      title: "RAADS-R",
+      description:
+        "A self-assesment tool for those who suspect they might have ASD.",
     },
   ];
   console.log(cardData);
   return (
-    <div className="flex flex-col">
+    <div key={Card}>
       {cardData.map((e) => (
         <Card data={e} />
       ))}
       <div>
-      <Tests/>
+        {testData.map((f) => (
+          <Tests data={f} />
+        ))}
       </div>
     </div>
   );
