@@ -5,4 +5,5 @@ export const Inventory = ({ data }) => {
       <p className="m-5 text-justify">{data.description}</p>
     </div>
   );
+  11;
 };
