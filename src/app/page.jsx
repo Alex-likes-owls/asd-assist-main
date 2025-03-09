@@ -13,6 +13,8 @@ export default function Home() {
   const [toggle, setToggle] = useState(false);
   const [data, setData] = useState(pagesData);
 
+  const [popdata, setPopdata] = useState(null);
+
   useEffect(() => {
     setData(toggle ? mongpagesData : pagesData);
   }, [toggle]);
@@ -28,18 +30,55 @@ export default function Home() {
             <Link className="m-4 text-lg" href={"#Home"}>
               Home
             </Link>
-            <Link className="m-4 text-lg" href={"#About"}>
+            <Link className="m-4 text-lg" href={!toggle ? "#About" : "#Тухай"}>
               About
             </Link>
-            <Link className="m-4 text-lg" href={"#Articles"}>
+            <Link
+              className="m-4 text-lg"
+              href={!toggle ? "#Articles" : "#Нийтлэлүүд"}
+            >
               Articles
             </Link>
-            <Link className="m-4 text-lg" href={"#Tests"}>
+            <Link
+              className="m-4 text-lg"
+              href={!toggle ? "#Tests" : "#Тестүүд"}
+            >
               Tests
             </Link>
           </div>
           <div>
             <Toggle toggle={toggle} setToggle={setToggle} />
+          </div>
+        </div>
+        <div
+          className={`h-full fixed z-20 w-full bg-sky-950 bg-opacity-[0.4] pt-24 ${
+            popdata ? "block" : "hidden"
+          }`}
+        >
+          <div className="p-5 m-auto bg-sky-50 w-1/2  text-sky-950 rounded-lg">
+            <span
+              className="font-bold  text-3xl float-right hover: text-sky-600 cursor-pointer ml-3"
+              onClick={() => setPopdata(null)}
+            >
+              &times;
+            </span>
+            <div className="flex flex-col justify-center items-center">
+              <p className="font-bold text-3xl text-center m-3">
+                {popdata ? popdata.title : "none"}
+              </p>
+              <Image
+                src={popdata ? popdata.imageSrc : "/Dontron.jpg"}
+                alt="nah"
+                width={325}
+                height={300}
+                className="rounded-lg m-3"
+              ></Image>
+              <div className="max-h-48 overflow-x-hidden overflow-y-auto">
+                <p className="m-5 text-justify w-11/12">
+                  {popdata ? popdata.article : "nada"}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         <div className="flex justify-around items-center m-24">
@@ -75,7 +114,14 @@ export default function Home() {
                   if (ind === 0) {
                     return <Inventory data={v} key={i} />;
                   } else if (ind === 1) {
-                    return <Card data={v} key={i} />;
+                    return (
+                      <Card
+                        popdata={popdata}
+                        setPopdata={setPopdata}
+                        data={v}
+                        key={i}
+                      />
+                    );
                   }
                   return <Tests data={v} key={i} />;
                 })}
