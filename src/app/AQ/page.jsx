@@ -5,22 +5,35 @@ import aqData from "../lib/testData";
 
 export default function AQ() {
   const [object, setObject] = useState({});
+  const [score, setScore] = useState(undefined);
 
   return (
     <form
       onSubmit={(e) => {
         e.preventDefault();
-        let sum = 0;
         let myArr = Object.values(object);
+
+        if (myArr.length !== 10) {
+          alert("The test has not been finished");
+          return;
+        }
+        let sum = 0;
         myArr.forEach((element) => {
           sum += element;
         });
-        if (myArr.length !== 10) {
-          alert("The test has not been finished");
-        }
+        setScore(sum);
         console.log(sum);
       }}
     >
+      <div className={`fixed ${score ? "block" : "hidden"}`}>
+        <span>Close</span>
+        <p>Your Result:</p>
+        <p>{score}</p>
+        <p>
+          You are likely to have Autism if you score more than 6. Please get
+          evaluated, as this is not a a professional diagnosis.
+        </p>
+      </div>
       <p>The AQ-10</p>
       <div>
         {aqData.map((val, ind) => {
