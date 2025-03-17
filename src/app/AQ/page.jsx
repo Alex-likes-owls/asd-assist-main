@@ -26,13 +26,17 @@ export default function AQ() {
       }}
     >
       <div className={`fixed ${score ? "block" : "hidden"}`}>
-        <span>Close</span>
-        <p>Your Result:</p>
-        <p>{score}</p>
-        <p>
-          You are likely to have Autism if you score more than 6. Please get
-          evaluated, as this is not a a professional diagnosis.
-        </p>
+        <div>
+          <span onClick={() => setScore(null)} className="cursor-pointer">
+            &times;
+          </span>
+          <p>Your Result:</p>
+          <p>{score}</p>
+          <p>
+            You are likely to have Autism if you score more than 6. Please get
+            evaluated, as this is not a a professional diagnosis.
+          </p>
+        </div>
       </div>
       <p>The AQ-10</p>
       <div>
