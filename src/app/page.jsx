@@ -25,31 +25,7 @@ export default function Home() {
         id="Home"
         className="h-screen flex flex-col justify-center text-white"
       >
-        <div className="bg-sky-900 w-full flex justify-around items-center fixed top-0 z-10">
-          <div className="flex justify-center items-center">
-            <Link className="m-4 text-lg" href={"#Home"}>
-              Home
-            </Link>
-            <Link className="m-4 text-lg" href={!toggle ? "#About" : "#Тухай"}>
-              About
-            </Link>
-            <Link
-              className="m-4 text-lg"
-              href={!toggle ? "#Articles" : "#Нийтлэлүүд"}
-            >
-              Articles
-            </Link>
-            <Link
-              className="m-4 text-lg"
-              href={!toggle ? "#Tests" : "#Тестүүд"}
-            >
-              Tests
-            </Link>
-          </div>
-          <div>
-            <Toggle toggle={toggle} setToggle={setToggle} />
-          </div>
-        </div>
+        
         <div
           className={`h-full fixed z-20 w-full bg-sky-950 bg-opacity-[0.4] pt-24 ${
             popdata ? "block" : "hidden"
