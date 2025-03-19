@@ -6,11 +6,13 @@ import { Tests } from "./components/Tests";
 import Image from "next/image";
 import Link from "next/link";
 import pagesData, { mongpagesData } from "./lib/data";
-import Toggle from "./components/Toggle";
 import { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 
 export default function Home() {
-  const [toggle, setToggle] = useState(false);
+  // const [toggle, setToggle] = useState(false);
+  const toggle = useSelector((state) => state.counter.toggle);
+
   const [data, setData] = useState(pagesData);
 
   const [popdata, setPopdata] = useState(null);
@@ -25,7 +27,6 @@ export default function Home() {
         id="Home"
         className="h-screen flex flex-col justify-center text-white"
       >
-        
         <div
           className={`h-full fixed z-20 w-full bg-sky-950 bg-opacity-[0.4] pt-24 ${
             popdata ? "block" : "hidden"
