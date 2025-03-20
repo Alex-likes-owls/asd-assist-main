@@ -38,38 +38,48 @@ export default function AQ() {
           </p>
         </div>
       </div>
-      <p>The AQ-10</p>
-      <div>
-        {aqData.map((val, ind) => {
-          return (
-            <div key={ind}>
-              <p>
-                {ind + 1}. {val.question}
-              </p>
-              {val.choices.map((v, i) => {
-                return (
-                  <div key={i}>
-                    <input
-                      type="radio"
-                      name={val.question}
-                      value={v.score}
-                      id={i}
-                      onChange={() => {
-                        setObject((prev) => {
-                          let newObj = { ...prev };
-                          newObj[`question-${ind}`] = v.score;
-                          return newObj;
-                        });
-                      }}
-                    />
-                    <label htmlFor="i">{v.answer}</label>
-                  </div>
-                );
-              })}
-            </div>
-          );
-        })}
-        <button type="submit">Submit</button>
+      <div className="mt-16 flex flex-col items-center text-sky-950">
+        <p className="font-bold text-4xl">The AQ-10</p>
+        <div className="m-3 ">
+          {aqData.map((val, ind) => {
+            return (
+              <div key={ind}>
+                <p className="text-2xl font-semibold m-2">
+                  {ind + 1}. {val.question}
+                </p>
+                {val.choices.map((v, i) => {
+                  return (
+                    <div key={i}>
+                      <input
+                        className="m-2"
+                        type="radio"
+                        name={val.question}
+                        value={v.score}
+                        id={i}
+                        onChange={() => {
+                          setObject((prev) => {
+                            let newObj = { ...prev };
+                            newObj[`question-${ind}`] = v.score;
+                            return newObj;
+                          });
+                        }}
+                      />
+                      <label className="text-lg" htmlFor="i">
+                        {v.answer}
+                      </label>
+                    </div>
+                  );
+                })}
+              </div>
+            );
+          })}
+          <button
+            className="text-sky-50 rounded-lg text-2xl font-semibold w-32 h-14 cursor-pointer bg-sky-900 hover:bg-sky-700"
+            type="submit"
+          >
+            Submit
+          </button>
+        </div>
       </div>
     </form>
   );
