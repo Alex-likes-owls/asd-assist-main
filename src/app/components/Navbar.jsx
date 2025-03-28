@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <div className="text-white bg-sky-900 w-full flex justify-around items-center fixed top-0 z-10">
       <div className="flex justify-center items-center">
-        <Link className="m-4 text-lg" href={"#Home"}>
+        <Link className="m-4 text-lg" href={"/"}>
           Home
         </Link>
         <Link className="m-4 text-lg" href={!toggle ? "#About" : "#Тухай"}>

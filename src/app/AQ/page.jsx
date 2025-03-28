@@ -73,12 +73,14 @@ export default function AQ() {
               </div>
             );
           })}
-          <button
-            className="text-sky-50 rounded-lg text-2xl font-semibold w-32 h-14 cursor-pointer bg-sky-900 hover:bg-sky-700"
-            type="submit"
-          >
-            Submit
-          </button>
+          <div className="flex justify-center m-6">
+            <button
+              className="text-sky-50 rounded-lg text-2xl font-semibold w-32 h-14 cursor-pointer bg-sky-900 hover:bg-sky-700"
+              type="submit"
+            >
+              Submit
+            </button>
+          </div>
         </div>
       </div>
     </form>
