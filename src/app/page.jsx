@@ -85,9 +85,9 @@ export default function Home() {
           >
             <div className="flex flex-col items-center">
               <p className="text-4xl font-bold mt-16">{val.title}</p>
-              <p className="w-5/12 m-5 text-center">{val.description}</p>
+              <p className="w-1/2 m-5 text-center">{val.description}</p>
               <div className="flex justify-around flex-wrap" key={ind}>
-                {val.arr.map((v, i) => {
+                {val.arr.slice(0, 2).map((v, i) => {
                   if (ind === 0) {
                     return <Inventory data={v} key={i} />;
                   } else if (ind === 1) {

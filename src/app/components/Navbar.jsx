@@ -16,16 +16,16 @@ export default function Navbar() {
         <Link className="m-4 text-lg" href={"/"}>
           Home
         </Link>
-        <Link className="m-4 text-lg" href={!toggle ? "#About" : "#Тухай"}>
-          About
-        </Link>
         <Link
           className="m-4 text-lg"
-          href={!toggle ? "#Articles" : "#Нийтлэлүүд"}
+          href={!toggle ? "/" + "#About" : "/" + "#Тухай"}
         >
+          About
+        </Link>
+        <Link className="m-4 text-lg" href={"/blogtest?t=articles"}>
           Articles
         </Link>
-        <Link className="m-4 text-lg" href={!toggle ? "#Tests" : "#Тестүүд"}>
+        <Link className="m-4 text-lg" href={"/blogtest?t=tests"}>
           Tests
         </Link>
       </div>

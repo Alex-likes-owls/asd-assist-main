@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+
 export const Tests = ({ data }) => {
   return (
     <Link
       className="flex flex-col justify-evenly items-center h-[500px] w-4/12 bg-sky-100 hover:bg-blue-100 text-center m-7 rounded-lg"
-      href={"/AQ"}
+      href={`/test?type=${data.id}`}
     >
       <div className="h-[450px] flex flex-col justify-center items-center">
         <Image

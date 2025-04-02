@@ -3,7 +3,8 @@ let cardData = [
     id: 0,
     title: "Myths Debunked",
     imageSrc: "/Dontron.jpg",
-    imageId: "(Donatello, a confirmed autistic character, from ROTTMNT)",
+    imageId:
+      "(Donatello, a confirmed autistic character, from ROTTMNT, owned by Nickelodeon)",
     description:
       "There are many misconceptions about ASD, whether it be that the disorder is caused by vacciness or that those who have ASD are sociopaths. Here, I'll debunk some of the most common stereotypes and myths.",
     article:
@@ -14,7 +15,7 @@ let cardData = [
     title: "Hyperfixations",
     imageSrc: "/Sonic-Logo.png",
     imageId:
-      "(Sonic, a franchise known for its overwhelmingly large amount of autistic fans)",
+      "(Sonic The Hedgehog, owned by SEGA, is a franchise known for its overwhelmingly large amount of autistic fans)",
     description:
       "Are hyperfixations simply a fancy name for obsessions, and are they exclusively an ASD thing? With social media popularizing the word, it's hard to tell. However, would you believe me if I said it's neither?",
     article:
@@ -24,11 +25,12 @@ let cardData = [
     id: 2,
     title: "Stimming",
     imageSrc: "/stimming.gif",
-    imageId: "(Laios from Dungeon Meshi stimming before fighting)",
+    imageId:
+      "(Laios from Dungeon Meshi, created by Ryoko Kui, stimming before fighting)",
     description:
       "Some believe stimming to only be hand-flapping or leg boucing, but in reality, stimming can come in many different forms. There's even different types of stimming, and neurotypical people stim too!",
     article:
-      "Stimming, short for self-stimulatory behavior, refers to repetitive movements or sounds that individuals, particularly those with autism, may engage in to self-regulate or cope with emotions. These behaviors can range from hand-flapping, rocking, and pacing to repetitive vocalizations or tapping objects. While stimming is often associated with individuals on the autism spectrum, it is important to note that neurotypical people also engage in stimming behaviors, though they may be less noticeable or more socially accepted. For example, tapping fingers, bouncing legs, chewing on pens, or even nail-biting are common forms of stimming among neurotypical individuals. Just like for those with autism, stimming in neurotypical people often serves to manage stress, anxiety, or excess energy, providing a means of self-soothing or focusing attention. Stimming is a natural and often helpful response to emotional or sensory overload, and while it is sometimes misunderstood, it is not inherently harmful. When stimming becomes disruptive or self-injurious, interventions may be used to help find more constructive coping strategies. Ultimately, stimming is a behavior that can be seen across different neurological profiles, and it should be understood as a way for individuals to regulate their emotions or sensory input, not as a sign of distress or dysfunction. ",
+      "Stimming, or self-stimulatory behavior, is when a person engages in repetitive movements or sounds to regulate emotions. These behaviors can range from hand-flapping, and rocking to vocal souds. While stimming is associated with individuals on the autism spectrum, it should be known that neurotypical people also engage in stimming behaviors, though less noticeably. For example, bouncing one's leg, whistling, or chewing on pens and nails. Just like with neurodivergent people, stimming in neurotypical people often helps manage stress, anxiety, and excessive energy, and thus providing a means of self-soothing. Stimming is a natural and beneficial response to emotional or sensory overload, and it is not at all inherently harmful. When stimming begins to hurt others or the person doing it, interventions may be taken to assist the individual to remain safe. In conclusion, stimming is a behavior that everyone engages in from time to time, and it should be understood as a helpful way for individuals to regulate their emotional or sensory input. ",
   },
   {
     id: 3,
@@ -38,28 +40,29 @@ let cardData = [
     description:
       "Alexithymia is when a person struggles with identifying and experiencing emotions. However having Alexithymia does not guarentee ASD, but check out the article if you relate to the description. ",
     article:
-      "Alexithymia is a condition characterized by difficulty identifying, understanding, and expressing emotions. Individuals with alexithymia often find it challenging to recognize and describe their feelings, which can create barriers to emotional communication and lead to misunderstandings. While alexithymia is commonly associated with autism spectrum disorder (ASD), it is not exclusive to it. Many people with other conditions, such as depression, anxiety, or trauma-related disorders, also experience alexithymia. There are two primary types of alexithymia: primary and secondary. Primary alexithymia is thought to be a trait-based condition, where individuals have inherent difficulties with emotional awareness and processing. This form is often linked to neurodevelopmental conditions like ASD. Secondary alexithymia, on the other hand, is typically a response to psychological stress or trauma, where individuals may develop difficulties with emotional recognition after experiencing overwhelming or difficult life events. In both types, the challenges in emotional awareness can impact social relationships, as others may perceive the individual as distant or disconnected, despite internal emotional experiences. Addressing alexithymia often involves helping individuals develop better emotional awareness and expression, improving their ability to navigate and communicate their feelings.",
+      "Alexithymia is a condition defined as having difficulty identifying, understanding, and expressing emotions. Individuals with alexithymia often find it challenging to identify and describe their feelings, which can lead to miscommunication and difficulty in forming bonds with others. While alexithymia is usually associated with autism spectrum disorder (ASD), it is not by any means exclusive to it. Many people with other conditions, such as depression, anxiety, or trauma-related disorders like PTSD, also experience alexithymia. There are two primary types of alexithymia: primary and secondary. Primary alexithymia is believed to be a trait-based condition, where individuals have inherent difficulties with emotional awareness and processing. This form is often linked to neurodevelopmental conditions like ASD. In contrast, secondary alexithymia is typically a response to psychological stress or trauma, where individuals may develop difficulties with emotional recognition after experiencing something incredibly traumatizing. While alexithymia cannot be cured, therapy may help them understand their emotions more.",
   },
   {
     id: 4,
     title: "Dyspraxia",
     imageSrc: "/Dyspraxia.gif",
     imageId:
-      "(Usagi from Sailor Moon, a character highly thought to have dyspraxia)",
+      "(Usagi from Sailor Moon, created by Takeuchi Naoko, is a character highly thought to have dyspraxia)",
     description:
       "Dyspraxia often overlaps with ASD, as many autistic individuals have 'bad' motor skills, and are more clumsy in general. This does not mean the person is in any way 'dumb', as it only affects physical movement.",
     article:
-      "Dyspraxia, also known as developmental coordination disorder (DCD), is a neurological condition that affects motor skills and coordination. Individuals with dyspraxia may struggle with tasks that require physical coordination, such as writing, tying shoes, or participating in sports. This can lead to challenges in daily activities, making it difficult to perform tasks that others may take for granted. Dyspraxia is often seen in individuals with autism spectrum disorder (ASD), as both conditions can involve difficulties with motor planning, coordination, and spatial awareness. However, dyspraxia is not exclusive to ASD and can occur in individuals without autism. In fact, dyspraxia can be present in individuals with other neurodevelopmental conditions, as well as in those who are neurotypical. The connection between dyspraxia and ASD lies in the fact that both can involve sensory processing issues, difficulty with fine and gross motor skills, and challenges in organizing actions to achieve goals. While not all individuals with ASD will have dyspraxia, those who do may face additional difficulties with movement and coordination that can impact their self-esteem and social interactions.",
+      "Dyspraxia, also known as developmental coordination disorder (DCD), is a neurological condition that affects motor skills and coordination. Individuals with dyspraxia may struggle with tasks that require physical coordination, such as writing, tying shoes, or sports in general. This can lead to challenges in daily activities, which sometimes leads to them getting bullied over not being able to do a 'simple' task. Dyspraxia is often associated with individuals on the autism spectrum, as both conditions can involve difficulties with motor skills, coordination, and spatial awareness. However, like alexithymia, dyspraxia is not exclusive to ASD as the condition can be present in individuals who are neurotypical. Those who struggle with processing sensory input, and fine and gross motor skills may face additional difficulties that can impact their self-esteem and social interactions.",
   },
   {
     id: 5,
     title: "Textures & ASD",
     imageSrc: "/Texture.gif",
-    imageId: "(Saiki Kusuo from The Disastrous Life of Saiki K)",
+    imageId:
+      "(Saiki Kusuo from The Disastrous Life of Saiki K, created by Shūichi Asō)",
     description:
-      "Chances are you already know about the autsitic stereotype that those with ASD only eat simple foods, adn are picky. But, did you know that this is caused by issues with texture, or that those with ASD sometimes like 'werird' foods because of it?",
+      "Chances are you already know about the autsitic stereotype that those with ASD only eat simple foods, adn are picky. But, did you know that this is caused by issues with texture, or that those with ASD sometimes like 'weird' foods because of it?",
     article:
-      "Individuals with autism spectrum disorder (ASD) often experience heightened or diminished sensitivity to textures, which can affect various aspects of their daily lives. One of the most common areas impacted by texture sensitivity is food. Some individuals may be hypersensitive to certain food textures, such as the squishiness of mashed potatoes, the sliminess of certain fruits, or the crunchiness of hard foods like chips. This can make it difficult to eat a wide variety of foods, as certain textures may cause discomfort or aversion. Conversely, some individuals with ASD may be hyposensitive and actively seek out specific textures, such as the sensation of crunchy foods or sticky substances like peanut butter. Similarly, sensitivities to textures also extend to clothing. Fabrics like wool, polyester, or even certain seams or labels in clothing can cause irritation and discomfort for individuals with ASD. They might avoid wearing certain clothes or prefer soft, smooth materials like cotton to avoid sensory overload. These sensory sensitivities, whether related to food or clothing, can affect social interactions, routines, and overall well-being. Understanding the importance of textures in the lives of individuals with ASD is essential for creating environments that allow them to feel comfortable and supported. Sensory-friendly strategies, including specific food preparations or adaptive clothing choices, can be helpful in managing these sensitivities.",
+      "Individuals with autism spectrum disorder (ASD) often experience heightened or diminished sensitivity to textures, which can affect various their daily lives greatly. For example, some individuals may be hypersensitive to certain food textures, such as the softness of mashed potatoes, the skin of fruits, or the crunchiness of chips. This can make it difficult to have a balanced diet. Conversely, some individuals with ASD may be hyposensitive and actively seek out specific textures, such as 'crunchy' foods. Moreover, clothing choices may be affected due to texture issues. Fabrics like wool and certain seams or tags in clothing can cause extreme irritation and discomfort for individuals with ASD. They might avoid wearing certain clothes or prefer soft, smooth materials like cotton to avoid a sensory overload. Unfortunately, these sensitivities may result in a person with ASD feeling alienated for struggling with seemingly inconsequential things.",
   },
 ];
 let testData = [
@@ -71,15 +74,17 @@ let testData = [
     title: "AQ-10",
     description:
       "The AQ-10 Autism Spectrum Quotient (AQ) is a 10-item questionnare designed to measure how many autistic traits an individual shows.",
+    threshold: 6,
   },
   {
     id: 1,
     imageSrc: "/btw.png",
     imageId:
       "(@dragon_catz on Twitter created the 'btw creature' as a symbol for those with ADHD)",
-    title: "ASRS-v1.1",
+    title: "ASRS-5",
     description:
-      "The Adult ADHD Self-Report Scale (ASRS v1.1) is an 18-item questionnaire designed to measure Attention Deficit Hyperactivity Disorder (ADHD) traits.",
+      "The Adult ADHD Self-Report Scale (ASRS-5) is a 6-item questionnaire designed to measure Attention Deficit Hyperactivity Disorder (ADHD) traits.",
+    threshold: 14,
   },
   {
     id: 2,
@@ -88,6 +93,7 @@ let testData = [
     title: "TAS",
     description:
       "The Toronto Alexithymia Scale(TAS) is a 20-item questionnaire designed to measure how many Alexithymia traits an individual shows.",
+    threshold: 52,
   },
 ];
 let inventoryData = [
@@ -114,50 +120,52 @@ let pagesData = [
   {
     title: "Articles",
     description:
-      " Have you wanted to learn more about ASD? Perhaps a close friend or family has been diagnosed with ASD and you'd like to help them as best as you can? Or maybe it's just for fun, in any case, please enjoy yourself in the articles written here!",
+      " Have you wanted to learn more about ASD? Perhaps a close friend or family has been diagnosed with ASD and you'd like to help them as best as you can? Or maybe it's just for fun, in any case, please enjoy some of the highlights from our all of our written articles! Read more on our Articles tab. °ʚ(*´꒳`*)ɞ°",
     arr: cardData,
   },
   {
     title: "Tests",
     description:
-      "Have you ever thought you might have Autism Spectrum disorder(ASD)? If so, why not take a quick test to check? Disclaimer, this is not at all an official diagnosis, simply a tool to put you in the right direction. If you finish the ASD quotients, please try out the ADHD test, as AuDHD is more common than you'd think.",
+      "Have you ever thought you might have Autism Spectrum disorder(ASD)? If so, why not take a quick test to check? Disclaimer, this is not at all an official diagnosis, simply a tool to put you in the right direction. If you finish the ASD quotients, please try out the ADHD test, as AuDHD is more common than you'd think. Take the Alexithymia test in the Test section! ദ്ദി(>ヮ<)𖥔˚✸",
     arr: testData,
   },
 ];
 
 export default pagesData;
 export { mongpagesData };
+export { testData };
 
 let mongcardData = [
   {
     id: 0,
     title: "Худал мэдээллүүд",
     imageSrc: "/Dontron.jpg",
-    imageId: "(ROTTMNT-ийн Донателло, батлагдсан аутизмтай дүр)",
+    imageId: "(Nickelodeon-ийн ROTTMNT-ийн Донателло батлагдсан аутизмтай дүр)",
     description:
       "Аутизмтай холбоотой олон ташаа ойлголтууд байдаг. Үүнд вакцинуудаас болж аутизм үүсдэг гэх мэт, эсвэл аутизмтай хүмүүс социопат байдаг гэсэн ташаа ойлголт орно. Энд би хамгийн түгээмэл стереотипуудаас заримыг нь худал болохыг тодруулна.",
     article:
-      "Вакцинаас үүдэлтэй аутизм гэдэг нь интернетэд өргөн тархсан домог юм. Гэсэн хэдий ч энэ эмгэгийн талаарх шинжлэх ухааны олон судалгааны үр дүнд амархан няцаагдаж, хожим нь энэ эмгэгтэй болох боломжгүй гэдгийг баталж байна. Бүх аутизмтай хүмүүсээс ижил шинж тэмдэг илэрч, тэд ижил төстэй байдаг гэдэг нь бас нэг худал мэдээлэл юм. Зарим аутизмтай хүмүүсийн онцлог шинж чанарууд илүү ихээр илэрдэг бол бусдынх илүү багаар илэрдэг байна. Мөн Аутизмтай хүмүүс 'сонин' эсвэл хүйтэн мэт санагдаж болох ч өрөвдөх сэтгэлийг мэдрэх чадвартай байдаг. Хүмүүс өсч томрох тусам илүү 'хэвийн' болдог боловч энэхүү эмгэг эдгэрдэггүй, насан туршынх билээ. Бүх аутизмтай хүмүүс суут ухаантай эсвэл оюуны бэрхшээлтэй байдаггүй, энэ хоёр нь хүмүүст маш ховор тохиолддог.",
+      "Вакцинаас аутизм үүсдэг гэдэг нь интернетэд өргөн тархсан худал мэдээлэл ба энэ эмгэгийн шинжлэх ухааны олон судалгаа хүн ирээдүйд аутизмтай болж чаддаггүй гэдгийг баталсан байдаг. Бүх аутизмтай хүмүүсээс ижил шинж тэмдэг илэрч, тэд нэг нэгэнтэйгээ төстэй байдаг гэдэг нь бас нэг худал мэдээлэл юм. Зарим аутизмтай хүмүүсээс онцлог шинж чанарууд илүү ихээр илэрдэг бол бусдаас илүү багаар илэрдэг. Мөн зарим хүмүүс аутизмтай хүмүүсийг сэтгэл хөдлөл мэдэрдэггүй гэж боддог боловч энэ бас худал мэдээлэл. Энэ эмгэгтэй хүмүүс өсч томрох тусам илүү 'хэвийн' болдог боловч энэхүү эмгэг эдгэрдэггүй, насан туршынх билээ.",
   },
   {
     id: 1,
     title: "Гиперфикс",
     imageSrc: "/Sonic-Logo.png",
-    imageId: "(Соник, олон аутизмтай сонирхогчидтойгоороо алдартай)",
+    imageId: "(SEGA-ийн Соник нь олон аутизмтай сонирхогчидтойгоороо алдартай)",
     description:
       "Гиперфикс нь шоу, кино зэрэгт хэдэн сар донтох гэсэн утгатай бол энэ нь зөвхөн аутизмын шинж тэмдэг үү эсвэл хүн бүхэн ийм байдаг уу? Сошиал медиа үгийг түгээмэл хэрэглэж, утгыг нь алдуулсан тул хэлэхэд хэцүү байдаг.",
     article:
-      " Гиперфикс гэдэг нь тухайн хүн сонгосон объект, үйл ажиллагаа эсвэл хүнийг удаан хугацаанд хэт их сонирхохыг хэлнэ. Хувь хүмүүс сонгосон зүйлийнхээ талаар илүү ихийг мэдэхийг хүсч байгаа тул сөрөг сэтгэл хөдлөлөө даван туулахын тулд гиперфиксийг ашиглаж болно. Жишээлбэл, хүн хичээл хийхээсээ илүү дуртай дүрийнхээ талаар суралцаж цагийг зарцуулж болно. Гиперфиксийн нэг жишээ нь удаан хугацаагаар нэг хоол идэх юм. Та гиперфиксийг зүгээр л нэг зүйл их сонирхох гэж бодож магадгүй, гэхдээ та андуурч байх болно, учир нь энэ нь давалгаа хэлбэрээр ирдэг. Хүн нэг хоол удаан хугацаагаар идэж байгаад нэг л өдөр хоолонд дургүй болж магадгүй юм. Гэвч дараа нь дахиад тэр хоолондоо дуртай болж дахин олон өдөр дараалан идэж болно. Гиперфиксатонууд нь хүн бүхэнд илэрдэг.",
+      " Гиперфикс гэдэг нь тухайн хүн сонгосон объект, үйл ажиллагаа эсвэл хүнийг удаан хугацаанд хэт их сонирхохыг хэлнэ. Хувь хүмүүс сонгосон зүйлийнхээ талаар илүү ихийг мэдэхийг хүсдэг ба сөрөг сэтгэл хөдлөлөө даван туулахын тулд гиперфиксийг ашиглаж болно. Жишээлбэл, хүн хичээл хийхээсээ илүү дуртай дүрийнхээ талаар суралцаж цагийг зарцуулах гэх мэт. Гиперфиксийн нэг жишээ нь удаан хугацаагаар нэг хоол идэх юм. Та гиперфиксийг зүгээр л нэг зүйл их сонирхох гэж бодож магадгүй, гэхдээ та андуурч байх болно, учир нь энэ нь давалгаа хэлбэрээр ирдэг. Хүн нэг хоол удаан хугацаагаар идэж байгаад нэг л өдөр тэр хоолонд дургүй болж магадгүй юм. Гэвч дараа нь дахиад тэр хоолондоо дуртай болж дахин олон өдөр дараалан идэж болно. Гиперфикс нь хүн бүхэнд илэрдэг.",
   },
   {
     id: 2,
     title: "Өвөрмөц үйлдэл",
     imageSrc: "/stimming.gif",
-    imageId: "(Dungeon Meshi-ээс Лайос тулааны өмнө өвөрмөц үйлдэл хийх)",
+    imageId:
+      "(Ryoko Kui зохиосон Dungeon Meshi-ээс Лайос тулааны өмнө өвөрмөц үйлдэл хийх)",
     description:
       "Гар, хөлөө савах эсвэл сонин дуу гаргахыг stimming гэдэг ба энэ нь олон янз байдлаар илэрч болдог. Аутизмтай хүмүүс энэхүү үйлдлүүдыг олон давтан хийдэг боловч энгийн хүн ч бас адил үйлдэл хийдгээрээ stimming их сонирхолтой!",
     article:
-      "Өвөрмөц үйлдэл нь хувь хүн, ялангуяа аутизмтай хүмүүсийн сэтгэл хөдлөлөө зохицуулахын тулд хийж болох давтагдах хөдөлгөөн, дуу чимээг хэлдэг. Эдгээр зан үйл нь гараа цохих, савлах, алхахаас эхлээд давтан дуу гаргах, объектыг тогших хүртэл янз бүр байж болно. Хэрхэн хөдлөх нь ихэвчлэн хувь хүнтэй холбоотой байдаг. Энгийн хүмүүс ч гэсэн ийм зан үйлийг хийдэг, гэхдээ тэдгээр нь бага анзаарагддаг, эсвэл нийгэмд илүү хүлээн зөвшөөрөгддөг, жишээ нь, хөлөө савах, шүглэх, үзэг зажлах, тэр байтугай хумсаа хазах нь аутизмтай хүмүүсийн дунд өвөрмөц үйлдийн нийтлэг хэлбэр юм. Өөрийгөө тайвшруулах эсвэл анхаарлыг төвлөрүүлэх гэж ийм хөдөлгөөн хийх нь сэтгэл хөдлөлийн болон мэдрэхүйн хэт ачаалал зэргээс сэргийлдэг байгалийн хариу үйлдэл боловч үүнийг заримдаа буруугаар ойлгодог. Өвөрмөц үйлдэл нь янз бүрийн хүмүүсээс ажиглагдаж болох зан үйл бөгөөд үүнийг сэтгэлийн хямрал, үйл ажиллагааны доголдлын шинж тэмдэг биш харин хувь хүмүүс өөрсдийн сэтгэл хөдлөл, мэдрэхүйн оролтыг зохицуулах арга гэж ойлгох хэрэгтэй. ",
+      "Өвөрмөц үйлдэл нь хувь хүн, ялангуяа аутизмтай хүмүүсийн сэтгэл хөдлөлөө зохицуулахын тулд хийдэг давтагдах хөдөлгөөн, дуу чимээг хэлдэг. Эдгээр зан үйл нь хөлөө савлахаас эхлэн сонин дуу чимээ гаргах юм. Хэрхэн хөдлөх нь ихэвчлэн хувь хүнтэй холбоотой байдаг. Энгийн хүмүүс ч гэсэн ийм зан үйлийг хийдэг, гэхдээ тэдгээр нь бага анзаарагддаг, эсвэл нийгэмд илүү хүлээн зөвшөөрөгддөг үйлдлүүд байдаг. Жишээ нь, хөлөө савах, шүглэх, үзэг зажлах, тэр байтугай хумсаа хазах нь аутизмтай хүмүүсийн дунд өвөрмөц үйлдийн нийтлэг хэлбэр юм. Өөрийгөө тайвшруулах эсвэл анхаарлыг төвлөрүүлэх гэж ийм хөдөлгөөн хийх нь сэтгэл хөдлөлийн болон мэдрэхүйн хэт ачаалал зэргээс сэргийлдэг байгалийн хариу үйлдэл. ",
   },
   {
     id: 3,
@@ -167,28 +175,29 @@ let mongcardData = [
     description:
       "Алекситимиа гэдэг нь хүн өөрийнхөө мэдрэмжийг тодорхойлох, эсвэл сэтгэл хөдлөл мэдрэхэд хүндрэлтэй байхыг хэлдэг. Гэвч Алекситимиатай байх нь аутизмтай байхыг баталж чадахгүй, гэхдээ та өөрийгөө энэ тодорхойлолттой адил гэж бодож байвал нийтлэлийг уншиж үзээрэй.",
     article:
-      "Алекситимиа нь сэтгэл хөдлөлөө таньж, ойлгож, илэрхийлэхэд хүндэтгэж, хүндрэл үүсгэдэг нөхцөл юм. Алекситимиатай хүмүүс ихэвчлэн өөрсдийн мэдрэмжүүдийг таньж, тодорхойлж чадахгүй байдаг бөгөөд энэ нь сэтгэл хөдлөлийн харилцаанд саад болж, буруу ойлголт үүсгэдэг. Алекситимиа нь түгээмэл байдлаар автизмтай холбоотой гэж үздэг боловч энэ нь зөвхөн аутизмтай холбогддоггүй. Бусад өвчтэй хүмүүс, тухайлбал депресс, түгшүүр эсвэл сэтгэцийн бэрхшээлтэй холбоотой хүмүүс ч мөн Алекситимиаг мэдэрдэг. Алекситимиад хоёр үндсэн төрөл байдаг: үндсэн ба хоёрдогч. Үндсэн Алекситимиа нь хүмүүсийн сэтгэл хөдлөлийн мэдлэг болон боловсруулалтад орох бэрхшээлтэй төрөл бөгөөд энэ нь ихэвчлэн нейрологи хөгжлийн өвчтэй, тухайлбал аутизмтай холбогддог. Хоёрдогч Алекситимиа нь сэтгэл зүйн дарамт болон өвдөлттэй холбоотой нөхцөл бөгөөд энэ нь хүнд болон бодит амьдралын нөхцөл байдалтай тулгарсны дараа хүмүүс сэтгэл хөдлөлийн танин мэдэхүйн бэрхшээлтэй болж болох юм. Эдгээр хоёр төрөлд ч гэсэн сэтгэл хөдлөлийн мэдлэгийн бэрхшээл нь нийгмийн харилцаанд нөлөөлж, бусад хүмүүс тухайн хүнийг холдуулах эсвэл холбогдолгүй гэж үзэж болох юм, хэдийгээр дотоод сэтгэл хөдлөл нь өөрчлөгдсөн байж болно.",
+      "Алекситимиа нь сэтгэл хөдлөлөө таньж, ойлгож, илэрхийлэхэд хүндрэл үүсгэдэг эмгэг юм. Алекситимиатай хүмүүс ихэвчлэн өөрсдийн мэдрэмжүүдийг таньж, тодорхойлж чадахгүй байдаг бөгөөд энэ нь сэтгэл хөдлөлийн харилцаанд саад болдог. Алекситимиа нь аутизмтай холбоотой гэж үздэг боловч энэ эмгэг ганцхан аутизмтай хүмүүст илэрдэггүй. Бусад өвчтэй хүмүүс, тухайлбал сэтгэлийн гутрал, хэт сандралтай хүмүүс ч мөн Алекситимиаг мэдэрдэг. Алекситимиад хоёр үндсэн төрөл байдаг: үндсэн ба хоёрдогч. Үндсэн Алекситимиа нь хүмүүсийн сэтгэл хөдлөлийн мэдлэг болон боловсруулалтад бэрхшээлтэй үүсгэдэг бөгөөд энэ нь ихэвчлэн нейрологи хөгжлийн өвчтэй, тухайлбал аутизмтай холбогддог. Хоёрдогч Алекситимиа нь сэтгэл зүйн дарамт болон өвдөлттэй холбоотой байдаг бөгөөд энэ нь амьдралын явцад ямар нэгэн нөхцөл байдалтай тулгарсны дараа үүсдэг.",
   },
   {
     id: 4,
     title: "Диспраксиа",
     imageSrc: "/Dyspraxia.gif",
     imageId:
-      "(Sailor Moon-ийн Усаги болох диспраксиатай гэж олон хүн боддог дүр)",
+      "(Takeuchi Naoko зохиосон Sailor Moon-ийн Усаги болох диспраксиатай гэж олон хүн боддог дүр)",
     description:
       "Диспраксиа нь олон аутизмтай хүний хувьд давхар тохиолддог бөгөөд эдгээр хүмүүс 'муу' хөдөлгөөний ур чадвартай байдаг ба ерөнхийдөө илүү болхи байдаг. Энэ нь тухайн хүнийг 'тэнэг' гэсэн үг биш, учир нь энэ нь зөвхөн биеийн хөдөлгөөнд л нөлөөлдөг.",
     article:
-      "Диспраксиа нь хөдөлгөөний ур чадвар болон зохицуулалтад нөлөөлдөг. Диспраксиатай хүмүүс физик зохицуулалт шаардсан ажлуудыг хийхэд бэрхшээлтэй байж болох бөгөөд үүнд бичих, гутал үдэх, эсвэл спортын үйл ажиллагаанд оролцох зэрэг орно. Энэ нь өдөр тутмын үйл ажиллагаанд сорилт үүсгэж, бусад хүмүүсийн хувьд энгийн мэт санагддаг зүйлсийг гүйцэтгэхэд хүнд болгож болох юм. Диспраксиа нь аутизмтай холбоотой хүмүүсийн дунд ихэвчлэн үзэгддэг бөгөөд хөдөлгөөний төлөвлөлт, зохицуулалт, орон зайн мэдлэгт бэрхшээлтэй болгодог. Гэсэн хэдий ч диспраксиа нь зөвхөн аутизмтай холбогддоггүй бөгөөд аутизмгүй хүмүүсийн дунд ч тохиолдож болно. Диспраксия нь бусад нейрологийн хөгжлийн эмгэгтэй хүмүүс болон энгийн хүмүүсийн дунд ч байж болно. Диспраксиа нарийн болон томоохон хөдөлгөөний ур чадварын бэрхшээлүүд, мөн зорилгод хүрэхийн тулд үйлдлүүдийг зохион байгуулахад хүндрэлтэй болгодог. Бүх аутизмтай хүмүүс диспраксиатай байхгүй ч, диспраксиатай хүмүүс хөдөлгөөний болон зохицуулалтын нэмэлт бэрхшээлтэй тулгарч, энэ нь тэдний өөртөө итгэх итгэл болон нийгмийн харилцаанд нөлөөлж болох юм.",
+      "Диспраксиа нь хөдөлгөөний ур чадвар болон зохицуулалтад нөлөөлдөг. Диспраксиатай хүмүүс зарим ажлуудыг хийхэд бэрхшээлтэй байдаг бөгөөд үүнд бичих, гутлаа үдэх, эсвэл спортоор хичээлэх зэрэг орно. Энэ нь бусад хүмүүсийн хувьд энгийн мэт санагддаг зүйлсийг гүйцэтгэхэд хүндрэлтэй болгодог учир энэ эмгэгтэй хүмүүс бусдад 'тэнэг' мэт санагддаг байна. Диспраксиа нь аутизмтай хүмүүсийн дунд ихэвчлэн үзэгддэг боловч аутизмгүй хүмүүсийн дунд ч тохиолдож болно. Диспраксиа хөдөлгөөний зохицуулга, нарийн болон томоохон хөдөлгөөний ур чадварт бэрхшээл үүсгэдэг. Бүх аутизмтай хүмүүс диспраксиатай байхгүй ч, диспраксиатай хүмүүст нэмэлт бэрхшээлтэй тулгарч, энэ нь тэдний нийгмийн харилцаанд сөргөөр нөлөөлж болох юм.",
   },
   {
     id: 5,
     title: "Текстур ба Аутизм",
     imageSrc: "/Texture.gif",
-    imageId: "(The Disastrous Life of Saiki K-ийн Саики Кусүо)",
+    imageId:
+      "(Shūichi Asō зохиосон The Disastrous Life of Saiki K-ийн Саики Кусүо)",
     description:
       "Та магадгүй аутизмтай хүмүүс зөвхөн энгийн хоол иддэг гэсэн стереотипийг мэдэж байгаа байх. Гэвч та энэ нь хоолны текстуртэй холбоотой ба аутизмтай хүмүүс заримдаа текстураас шалтгаалан танд 'сонин' байх хоол иддэг гэдгийг мэдэх үү?",
     article:
-      "Аутизмтай хүмүүс ихэвчлэн текстурын мэдрэмжийн өндөр болон буурсан байдлыг мэдэрч, энэ нь тэдний өдөр тутмын амьдралын олон талд нөлөөлж болно. Текстурын мэдрэмжид хамгийн түгээмэл нөлөөлдөг нэг салбар нь хоол хүнс юм. Зарим хүмүүс тодорхой төрлийн хоолны текстурт хэт мэдрэмтгий байдаг, жишээ нь, төмсний нухашны зөөлөн бүтэц,  чипс зэрэг хатуу хоолны хугарах дуу чимээ. Энэ нь тэдэнд олон төрлийн хоол идэхэд хүндрэлтэй байж болох бөгөөд тодорхой текстурууд нь тавгүй байдал үүсгэж эсвэл зайлсхийх шалтгаан болдог. Үүний эсрэгээр, аутизмтай зарим хүмүүс текстурын мэдрэмжийн бууралттай байж, тодорхой текстуруудыг идэвхтэй хайж олох бөгөөд үүнд хугарах хоолны мэдрэмж эсвэл цөцгийн тос шиг наалдамхай зүйлс орно. Үүнтэй адил текстурын мэдрэмж нь хувцасанд ч нөлөөлдөг. Хувцасны даавуу нь ноос, полиэстер, эсвэл хувцасны нарийн шовгор эсвэл шошго зэрэг нь аутизмтай хүмүүст тавгүй байдлыг үүсгэж болно. Тэд зарим хувцсыг өмсөхөөс зайлсхийж, мэдрэхүйд ачаалал өгөхгүй байхын тулд зөөлөн, гөлгөр материал болох хөвөнтэй хувцас өмсөхийг илүүд үздэг. Эдгээр мэдрэхүйд мэдрэмтгий байдал нь хоол хүнс эсвэл хувцасанд холбогдсон байгаагаас үл хамааран нийгмийн харилцаа, өдөр тутмын дэг журам болон нийтлэг сайн сайхан байдалд нөлөөлж болно. Аутизмтай хүмүүсийн амьдралд текстурын ач холбогдлыг ойлгох нь тэдэнд тав тухтай, дэмжлэгтэй орчинг бүрдүүлэхэд чухал юм. Мэдрэхүйд таарсан стратегиуд, жишээлбэл, тодорхой хоол бэлтгэх эсвэл тохируулсан хувцас сонгох нь эдгээр мэдрэмжүүдийг зохицуулахад туслах боломжтой.",
+      "Аутизмтай хүмүүс ихэвчлэн текстурын мэдрэмжийн өндөр болон буурсан байдлыг мэдэрч, энэ нь тэдний өдөр тутмын амьдралын олон хэсэгт нөлөөлж болно. Текстурын мэдрэмж идэх хоол хүнсэнд их нөлөөлдөг. Зарим хүмүүс тодорхой төрлийн хоолны текстурт хэт мэдрэмтгий байдаг, жишээ нь төмсний нухаш хэт зөөлөн санагдах, чипсийн хугарах дуу чимээ хэт чанга байх гэх мэт. Энэ нь тэдэнд олон төрлийн хоол идэхэд хүндрэлтэй болгодог. Гэвч, зарим аутизмтай хүмүүс текстурын мэдрэмжийн бууралттай байдаг тул халуун ногоо эсвэл идэхэд хатуу ногоо, жимс зэргийг идэвхтэй хайдаг. Үүнтэй адил текстурын мэдрэмж нь хувцаслалтад ч нөлөөлдөг. Ноос, хувцасны шошго зэрэг нь аутизмтай хүмүүст тавгүй байдлыг үүсгэж болно. Иймээс тэд зарим хувцсыг өмсөхөөс зайлсхийдаг ба энэ нь нийгмийн харилцаанд сөргөөр нөлөөлж болно.",
   },
 ];
 let mongtestData = [
@@ -200,15 +209,17 @@ let mongtestData = [
     title: "AQ-10",
     description:
       "The AQ-10 Autism Spectrum Quotient (AQ) нь хувь хүн хэдэн аутизмын шинж тэмдэгтэй болохыг хэмжих зорилготой 10 асуулттай тест юм.",
+    page: "/AQ",
   },
   {
     id: 1,
     imageSrc: "/btw.png",
     imageId:
       "(@dragon_catz Twitter дээр 'btw creature' -ийг ADHD-тэй хүмүүст зориулсан бэлгэдэл болгон бүтээсэн)",
-    title: "ASRS-v1.1",
+    title: "ASRS-5",
     description:
-      "Насанд хүрэгчдийн ADHD Өөрийгөө Тодорхойлох Үнэлгээ (ASRS v1.1) нь Анхаарал Дутмагших, Хэт Хөдөлгөөнтөх эмгэг (ADHD)-ын шинж тэмдгийг хэмжих зорилготой 18 асуулттай асуулга юм.",
+      "Насанд хүрэгчдийн ADHD Өөрийгөө Тодорхойлох Үнэлгээ (ASRS-5) нь Анхаарал Дутмагших, Хэт Хөдөлгөөнтөх эмгэг (ADHD)-ын шинж тэмдгийг хэмжих зорилготой 6 асуулттай асуулга юм.",
+    page: "/ASRS",
   },
   {
     id: 2,
@@ -217,6 +228,7 @@ let mongtestData = [
     title: "TAS",
     description:
       "Торонто Алекситимиа Скала (TAS) нь хувь хүн хэдэн Алекситимиа шинж тэмдэгтэй болохыг хэмжих зорилготой 20 асуулттай тест юм.",
+    page: "/AQ",
   },
 ];
 let monginventoryData = [
@@ -243,13 +255,13 @@ let mongpagesData = [
   {
     title: "Нийтлэлүүд",
     description:
-      "Та ASD-ийн талаар илүү ихийг сурахыг хүссэн үү? Магадгүй ойр дотны найз эсвэл гэр бүлд тань ASD оношлогдсон бөгөөд тэдэнд туслахыг хүсч байна уу? Магадгүй энэ нь танд зөвхөн хөгжилтэй зүйл байж болох юм, ямар ч гэсэн энд бичигдсэн нийтлэлүүдийг уншиж үзээрэй!",
+      "Та ASD-ийн талаар илүү ихийг сурахыг хүссэн үү? Магадгүй ойр дотны найз эсвэл гэр бүлд тань ASD оношлогдсон бөгөөд тэдэнд туслахыг хүсч байна уу? Магадгүй энэ нь танд зөвхөн хөгжилтэй зүйл байж болох юм, ямар ч гэсэн энд бичигдсэн нийтлэлүүдийг уншиж үзээрэй! Илүү нийтлэлүүдийг Articles дээр уншаарай. °ʚ(*´꒳`*)ɞ°",
     arr: mongcardData,
   },
   {
     title: "Тестүүд",
     description:
-      "Та өөртийгөө Аутизмтай байх магадлалтай гэж бодож байсан уу? Хэрвээ тийм бол, энд бичигдсэн тестүүдийг туршиж үзнэ үү? Энэ нь албан ёсны оношлогоо биш, зөвхөн танд зөв чиглэлд хүргэх хэрэгсэл юм. Хэрвээ та ASD-ын тестийг хийсэн бол, ADHD-ийн тестийг туршаарай, учир нь энэ хоёр таны бодсоноос илүү түгээмэл хамт илэрдэг.",
+      "Та өөртийгөө Аутизмтай байх магадлалтай гэж бодож байсан уу? Хэрвээ тийм бол, энд бичигдсэн тестүүдийг туршиж үзнэ үү? Энэ нь албан ёсны оношлогоо биш, зөвхөн танд зөв чиглэлд хүргэх хэрэгсэл юм. Хэрвээ та ASD-ын тестийг хийсэн бол, ADHD-ийн тестийг туршаарай, учир нь энэ хоёр таны бодсоноос илүү түгээмэл хамт илэрдэг. Мөн Алекситимиа эмгэгийн тестийг Test хэсэг дээр хийгээрэй! ദ്ദി(>ヮ<)𖥔˚✸",
     arr: mongtestData,
   },
 ];
