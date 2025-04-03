@@ -118,13 +118,13 @@ let pagesData = [
     arr: inventoryData,
   },
   {
-    title: "Articles",
+    title: "Highlighted Articles",
     description:
       " Have you wanted to learn more about ASD? Perhaps a close friend or family has been diagnosed with ASD and you'd like to help them as best as you can? Or maybe it's just for fun, in any case, please enjoy some of the highlights from our all of our written articles! Read more on our Articles tab. °ʚ(*´꒳`*)ɞ°",
     arr: cardData,
   },
   {
-    title: "Tests",
+    title: "Highlighted Tests",
     description:
       "Have you ever thought you might have Autism Spectrum disorder(ASD)? If so, why not take a quick test to check? Disclaimer, this is not at all an official diagnosis, simply a tool to put you in the right direction. If you finish the ASD quotients, please try out the ADHD test, as AuDHD is more common than you'd think. Take the Alexithymia test in the Tests section! Sign in with your GitHub account to take the tests! ദ്ദി(>ヮ<)𖥔˚✸",
     arr: testData,
@@ -253,13 +253,13 @@ let mongpagesData = [
     arr: monginventoryData,
   },
   {
-    title: "Нийтлэлүүд",
+    title: "Сонгосон Нийтлэлүүд",
     description:
       "Та ASD-ийн талаар илүү ихийг сурахыг хүссэн үү? Магадгүй ойр дотны найз эсвэл гэр бүлд тань ASD оношлогдсон бөгөөд тэдэнд туслахыг хүсч байна уу? Магадгүй энэ нь танд зөвхөн хөгжилтэй зүйл байж болох юм, ямар ч гэсэн энд бичигдсэн нийтлэлүүдийг уншиж үзээрэй! Илүү нийтлэлүүдийг Articles дээр уншаарай. °ʚ(*´꒳`*)ɞ°",
     arr: mongcardData,
   },
   {
-    title: "Тестүүд",
+    title: "Сонгосон Тестүүд",
     description:
       "Та өөртийгөө Аутизмтай байх магадлалтай гэж бодож байсан уу? Хэрвээ тийм бол, энд бичигдсэн тестүүдийг туршиж үзнэ үү? Энэ нь албан ёсны оношлогоо биш, зөвхөн танд зөв чиглэлд хүргэх хэрэгсэл юм. Хэрвээ та ASD-ын тестийг хийсэн бол, ADHD-ийн тестийг туршаарай, учир нь энэ хоёр таны бодсоноос илүү түгээмэл хамт илэрдэг. Мөн Алекситимиа эмгэгийн тестийг Test хэсэг дээр хийгээрэй! Тестүүдийг хийхийн тулд GitHub account-аараа нэвтэрч орно уу! ദ്ദി(>ヮ<)𖥔˚✸",
     arr: mongtestData,

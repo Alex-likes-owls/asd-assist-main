@@ -1,41 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## The goal
 
-## Getting Started
+The project falls under the Education category as it aims to dispel misinformation about ASD, and spread awareness on the disorder. My country, Mongolia, is far behind in terms of mental health, so a lot of my focus was on explaining terms, and facts about the disorder in an engaging way. To do this, I used well-known franchises, and animes like Dungeon Meshi and Sonic for the images on the articles. All the information in the articles can easily be found on the web, or as personal anecdotes from autistic individuals. The tests are considered as "accurate online assessments", and is NOT a diagnosis.
 
-First, run the development server:
+## To run the project
 
-```bash
+Firstly, you must run
+
+```
+npm install
+```
+
+Afterward, so the GitHub authentication works, run
+
+```
+npx auth secret
+```
+
+This will automatically create AUTH_SECRET in your .env.local file. Go to GitHub in developer mode and create a new OAuth app. Write [http://localhost:3000](http://localhost:3000) in the Homepage URL, and [http://localhost:3000/api/auth/callback/github](http://localhost:3000/api/auth/callback/github) in the Authorization callback URL. Press Register application.
+In the .env.local file paste the Client ID you receive into
+
+```
+AUTH_GITHUB_ID=""
+```
+
+Generate a client secret in GitHub and then paste it into
+
+```
+AUTH_GITHUB_SECRET=""
+```
+
+Handwrite these GitHub ID, and secret in the .env.local file
+
+Finally, in the terminal run:
+
+```
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## What the project used
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
-
-## PS
-
-Remember (-_-)b
+I used Next.js to make the project, tailwind css for styling the webpage, react-icons for icons, react-redux to create a universal state (the toggle so it can switch between Mongolian and English), and I used NextAuth.js for authentication so the user could take the tests I provided.
