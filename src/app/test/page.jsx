@@ -79,11 +79,11 @@ export default function Test() {
           </p>
         </div>
       </div>
-      <div className=" flex flex-col items-center text-sky-950">
+      <div className=" flex flex-col items-center text-sky-950 justify-center ">
         <p className="mt-16 font-bold text-4xl">
           {testTitle[Number(type)].title}
         </p>
-        <div className="m-3 ">
+        <div className="m-3 w-2/3 ">
           {data.map((val, ind) => {
             return (
               <div key={ind}>

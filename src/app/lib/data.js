@@ -126,7 +126,7 @@ let pagesData = [
   {
     title: "Tests",
     description:
-      "Have you ever thought you might have Autism Spectrum disorder(ASD)? If so, why not take a quick test to check? Disclaimer, this is not at all an official diagnosis, simply a tool to put you in the right direction. If you finish the ASD quotients, please try out the ADHD test, as AuDHD is more common than you'd think. Take the Alexithymia test in the Test section! ദ്ദി(>ヮ<)𖥔˚✸",
+      "Have you ever thought you might have Autism Spectrum disorder(ASD)? If so, why not take a quick test to check? Disclaimer, this is not at all an official diagnosis, simply a tool to put you in the right direction. If you finish the ASD quotients, please try out the ADHD test, as AuDHD is more common than you'd think. Take the Alexithymia test in the Tests section! Sign in with your GitHub account to take the tests! ദ്ദി(>ヮ<)𖥔˚✸",
     arr: testData,
   },
 ];
@@ -261,7 +261,7 @@ let mongpagesData = [
   {
     title: "Тестүүд",
     description:
-      "Та өөртийгөө Аутизмтай байх магадлалтай гэж бодож байсан уу? Хэрвээ тийм бол, энд бичигдсэн тестүүдийг туршиж үзнэ үү? Энэ нь албан ёсны оношлогоо биш, зөвхөн танд зөв чиглэлд хүргэх хэрэгсэл юм. Хэрвээ та ASD-ын тестийг хийсэн бол, ADHD-ийн тестийг туршаарай, учир нь энэ хоёр таны бодсоноос илүү түгээмэл хамт илэрдэг. Мөн Алекситимиа эмгэгийн тестийг Test хэсэг дээр хийгээрэй! ദ്ദി(>ヮ<)𖥔˚✸",
+      "Та өөртийгөө Аутизмтай байх магадлалтай гэж бодож байсан уу? Хэрвээ тийм бол, энд бичигдсэн тестүүдийг туршиж үзнэ үү? Энэ нь албан ёсны оношлогоо биш, зөвхөн танд зөв чиглэлд хүргэх хэрэгсэл юм. Хэрвээ та ASD-ын тестийг хийсэн бол, ADHD-ийн тестийг туршаарай, учир нь энэ хоёр таны бодсоноос илүү түгээмэл хамт илэрдэг. Мөн Алекситимиа эмгэгийн тестийг Test хэсэг дээр хийгээрэй! Тестүүдийг хийхийн тулд GitHub account-аараа нэвтэрч орно уу! ദ്ദി(>ヮ<)𖥔˚✸",
     arr: mongtestData,
   },
 ];

@@ -10,7 +10,6 @@ import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 export default function Home() {
-  // const [toggle, setToggle] = useState(false);
   const toggle = useSelector((state) => state.counter.toggle);
 
   const [data, setData] = useState(pagesData);
