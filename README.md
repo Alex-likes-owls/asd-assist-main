@@ -16,7 +16,7 @@ Afterward, so the GitHub authentication works, run
 npx auth secret
 ```
 
-This will automatically create AUTH_SECRET in your .env.local file. Go to GitHub in developer mode and create a new OAuth app. Write [http://localhost:3000](http://localhost:3000) in the Homepage URL, and [http://localhost:3000/api/auth/callback/github](http://localhost:3000/api/auth/callback/github) in the Authorization callback URL. Press Register application.
+This will automatically create AUTH_SECRET in your .env.local file. Go to GitHub in developer settings and create a new OAuth app. Write [http://localhost:3000](http://localhost:3000) in the Homepage URL, and [http://localhost:3000/api/auth/callback/github](http://localhost:3000/api/auth/callback/github) in the Authorization callback URL. Press Register application.
 In the .env.local file paste the Client ID you receive into
 
 ```
