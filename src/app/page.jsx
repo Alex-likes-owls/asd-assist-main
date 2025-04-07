@@ -79,7 +79,7 @@ export default function Home() {
         return (
           <div
             className={`text-sky-950 ${ind === 1 ? "bg-white" : "bg-sky-50"}`}
-            id={val.title}
+            id={"About"}
             key={ind}
           >
             <div className="flex flex-col items-center">
