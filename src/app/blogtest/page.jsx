@@ -31,7 +31,7 @@ export default function BlogTest() {
   }
 
   return (
-    <div className="text-sky-950 mt-16 flex flex-col items-center">
+    <div className="text-sky-800 mt-16 flex flex-col items-center">
       <div
         className={`h-full fixed z-20 w-full bg-sky-950 bg-opacity-[0.4] pt-24 top-0 ${
           popdata ? "block" : "hidden"
@@ -66,8 +66,8 @@ export default function BlogTest() {
       <p className="m-6 font-bold text-4xl">
         {t[0].toUpperCase() + t.slice(1, 8)}
       </p>
-      <div className="flex justify-between items-center">
-        <p className="font-semibold text-lg mb-4 w-1/2 text-center">
+      <div className="flex flex-col justify-center items-center">
+        <p className="font-semibold text-lg mb-8 w-2/3 text-center">
           {toggle
             ? "Тодруулсан хэсэг дээр байршуулаагүй бүгдийг та уншиж үзээрэй ٩(^ᗜ^ )و ´-"
             : "Please enjoy the ones that were not in the highlights section of the home page ٩(^ᗜ^ )و ´-"}
@@ -76,7 +76,7 @@ export default function BlogTest() {
           <input
             type="text"
             name="searchbar"
-            className="bg-sky-50 rounded-full pl-10 p-2"
+            className="bg-sky-50 rounded-full pl-11 p-3 w-96"
             id="searchbar"
             placeholder="Search"
             onChange={(e) =>
@@ -87,7 +87,7 @@ export default function BlogTest() {
               )
             }
           />
-          <FaSearch className="absolute ml-3" />
+          <FaSearch className="absolute ml-3 size-5" />
         </div>
       </div>
       <div className="justify-around  flex flex-wrap ">

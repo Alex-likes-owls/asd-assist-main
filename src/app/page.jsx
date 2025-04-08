@@ -21,7 +21,7 @@ export default function Home() {
   }, [toggle]);
 
   return (
-    <div className="bg-sky-700 ">
+    <div className="bg-sky-600 ">
       <div
         id="Home"
         className="h-screen flex flex-col justify-center text-white"
@@ -31,9 +31,9 @@ export default function Home() {
             popdata ? "block" : "hidden"
           }`}
         >
-          <div className="p-5 m-auto bg-sky-50 w-1/2  text-sky-950 rounded-lg">
+          <div className="p-5 m-auto bg-sky-50 w-1/2  text-sky-800 rounded-lg">
             <span
-              className="font-bold  text-3xl float-right hover: text-sky-600 cursor-pointer ml-3"
+              className="font-bold  text-3xl float-right hover: text-sky-800 cursor-pointer ml-3"
               onClick={() => setPopdata(null)}
             >
               &times;
@@ -60,7 +60,7 @@ export default function Home() {
         <div className="flex justify-around items-center m-24">
           <div className="flex-col w-1/2">
             <p className="text-5xl font-bold">ASD-Assist</p>
-            <p className="text-xl mt-7 w-11/12">
+            <p className="text-xl text-sky-100 mt-7 w-11/12">
               {!toggle
                 ? " A website designed to debunk false stereotypes and spread awareness of Autistic Spectrum Disorder(ASD). Take some self-assessments, read some fun articles, and simply enjoy yourself."
                 : "Аутизмын хүрээний эмгэг (АХЭ)-ын буруу ойлголтуудыг үгүйсгэж, өвчний талаарх мэдээлэл түгээх зорилготой вэбсайт. Өөрийгөө аутизмтай эсэхээ шалгаж сонирхолтой тестүүд өгч, энэхүү өвчний тухай нийтлэлүүдийг уншиж үзээрэй."}
@@ -69,8 +69,8 @@ export default function Home() {
           <Image
             className="rounded-lg motion-safe:animate-[bounce_2s_ease-out_infinite] mt-14"
             src="/Sonic-Logo.gif"
-            width={450}
-            height={450}
+            width={500}
+            height={500}
             alt="sonk"
           />
         </div>
@@ -78,7 +78,7 @@ export default function Home() {
       {data.map((val, ind) => {
         return (
           <div
-            className={`text-sky-950 ${ind === 1 ? "bg-white" : "bg-sky-50"}`}
+            className={`text-sky-800 ${ind === 1 ? "bg-white" : "bg-sky-50"}`}
             id={"About"}
             key={ind}
           >

@@ -15,7 +15,7 @@ export default function Toggle() {
   return (
     <div
       className={`flex w-14 h-7 rounded-full ${
-        !toggle ? "bg-sky-700" : "bg-sky-600"
+        !toggle ? "bg-sky-500" : "bg-sky-400"
       }`}
       onClick={() => {
         dispatch(changeToggle());

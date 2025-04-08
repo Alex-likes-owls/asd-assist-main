@@ -8,7 +8,7 @@ export default async function Profile() {
   console.log(session);
   if (session?.user) {
     return (
-      <div className=" text-sky-950 flex flex-col justify-evenly items-center h-screen">
+      <div className=" text-sky-800 flex flex-col justify-evenly items-center h-screen">
         <ProfileText />
         <div className="flex flex-col items-center">
           <Image

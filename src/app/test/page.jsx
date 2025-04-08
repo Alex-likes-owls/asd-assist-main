@@ -17,15 +17,16 @@ export default function Test() {
   const searchParams = useSearchParams();
   const type = searchParams.get("type");
   useEffect(() => {
-    if (type === "0") {
-      setData(toggle ? testData.aqTest.mong : testData.aqTest.english);
-    }
-    if (type === "1") {
-      setData(toggle ? testData.asrsTest.mong : testData.asrsTest.english);
-    }
-    if (type === "2") {
-      setData(toggle ? testData.tasTest.mong : testData.tasTest.english);
-    }
+    setData(toggle ? testData[type].mong : testData[type].english);
+    // if (type === "0") {
+    //   setData(toggle ? testData.aqTest.mong : testData.aqTest.english);
+    // }
+    // if (type === "1") {
+    //   setData(toggle ? testData.asrsTest.mong : testData.asrsTest.english);
+    // }
+    // if (type === "2") {
+    //   setData(toggle ? testData.tasTest.mong : testData.tasTest.english);
+    // }
   }, [toggle, type]);
 
   if (!data) {
@@ -57,10 +58,10 @@ export default function Test() {
           score ? "block" : "hidden"
         }`}
       >
-        <div className="p-5 m-auto bg-sky-50 w-1/2  text-sky-950 rounded-lg">
+        <div className="p-5 m-auto bg-sky-50 w-1/2  text-sky-800 rounded-lg">
           <span
             onClick={() => setScore(null)}
-            className="font-bold  text-3xl float-right hover: text-sky-600  ml-3 cursor-pointer"
+            className="font-bold  text-3xl float-right hover: text-sky-800  ml-3 cursor-pointer"
           >
             &times;
           </span>
@@ -71,17 +72,17 @@ export default function Test() {
           <p className="text-center font-semibold">
             {toggle
               ? `Хэрэв та ${
-                  testTitle[Number(type)].threshold
+                  testTitle.filter((v) => v.name === type)[0].threshold
                 } онооноос дээш авбал энэ эмгэгтэй байх өндөр магадлалтай. Гэвч энэхүү тест таныг бүрэн оношилж чадахгүй учраас өндөр оноо авбал та битгий санаа зовоорой.`
               : ` You are likely to have this condition if you score more than ${
-                  testTitle[Number(type)].threshold
+                  testTitle.filter((v) => v.name === type)[0].threshold
                 }. However, as this is not an official diagnosis but rather a tool to calcute the amount of symptoms you show, you are recommended to take this result with a whole lot of salt.`}
           </p>
         </div>
       </div>
-      <div className=" flex flex-col items-center text-sky-950 justify-center ">
+      <div className=" flex flex-col items-center text-sky-800 justify-center ">
         <p className="mt-16 font-bold text-4xl">
-          {testTitle[Number(type)].title}
+          {testTitle.filter((v) => v.name === type)[0].title}
         </p>
         <div className="m-3 w-2/3 ">
           {data.map((val, ind) => {
@@ -121,7 +122,7 @@ export default function Test() {
           })}
           <div className="flex justify-center m-6">
             <button
-              className="text-sky-50 rounded-lg text-2xl font-semibold w-32 h-14 cursor-pointer bg-sky-900 hover:bg-sky-700"
+              className="text-sky-50 rounded-lg text-2xl font-semibold w-32 h-14 cursor-pointer bg-sky-800 hover:bg-sky-600"
               type="submit"
             >
               Submit

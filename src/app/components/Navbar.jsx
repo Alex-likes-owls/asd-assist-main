@@ -27,7 +27,7 @@ export default async function Navbar() {
     button = <SignInButton />;
   }
   return (
-    <div className="text-white bg-sky-900 w-full flex justify-around items-center fixed top-0 z-10">
+    <div className="text-white bg-sky-800 w-full flex justify-around items-center fixed top-0 z-10">
       <div className="flex justify-center items-center">
         <Link className="m-4 text-lg" href={"/"}>
           Home

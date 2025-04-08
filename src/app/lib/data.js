@@ -75,6 +75,7 @@ let testData = [
     description:
       "The AQ-10 Autism Spectrum Quotient (AQ) is a 10-item questionnare designed to measure how many autistic traits an individual shows.",
     threshold: 6,
+    name: "aqTest",
   },
   {
     id: 1,
@@ -85,6 +86,7 @@ let testData = [
     description:
       "The Adult ADHD Self-Report Scale (ASRS-5) is a 6-item questionnaire designed to measure Attention Deficit Hyperactivity Disorder (ADHD) traits.",
     threshold: 14,
+    name: "asrsTest",
   },
   {
     id: 2,
@@ -94,6 +96,7 @@ let testData = [
     description:
       "The Toronto Alexithymia Scale(TAS) is a 20-item questionnaire designed to measure how many Alexithymia traits an individual shows.",
     threshold: 52,
+    name: "tasTest",
   },
 ];
 let inventoryData = [
@@ -209,7 +212,8 @@ let mongtestData = [
     title: "AQ-10",
     description:
       "The AQ-10 Autism Spectrum Quotient (AQ) нь хувь хүн хэдэн аутизмын шинж тэмдэгтэй болохыг хэмжих зорилготой 10 асуулттай тест юм.",
-    page: "/AQ",
+    name: "aqTest",
+    threshold: 6,
   },
   {
     id: 1,
@@ -219,7 +223,8 @@ let mongtestData = [
     title: "ASRS-5",
     description:
       "Насанд хүрэгчдийн ADHD Өөрийгөө Тодорхойлох Үнэлгээ (ASRS-5) нь Анхаарал Дутмагших, Хэт Хөдөлгөөнтөх эмгэг (ADHD)-ын шинж тэмдгийг хэмжих зорилготой 6 асуулттай асуулга юм.",
-    page: "/ASRS",
+    name: "asrsTest",
+    threshold: 14,
   },
   {
     id: 2,
@@ -228,7 +233,8 @@ let mongtestData = [
     title: "TAS",
     description:
       "Торонто Алекситимиа Скала (TAS) нь хувь хүн хэдэн Алекситимиа шинж тэмдэгтэй болохыг хэмжих зорилготой 20 асуулттай тест юм.",
-    page: "/AQ",
+    name: "tasTest",
+    threshold: 52,
   },
 ];
 let monginventoryData = [
