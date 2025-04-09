@@ -55,14 +55,14 @@ export default function Test() {
       }}
     >
       <div
-        className={`h-full fixed z-20 w-full bg-sky-950 bg-opacity-[0.4] pt-24  ${
+        className={`h-full fixed z-20 w-full bg-blue-950 bg-opacity-[0.4] pt-24  ${
           score ? "block" : "hidden"
         }`}
       >
-        <div className="p-5 m-auto bg-sky-50 w-1/2  text-sky-800 rounded-lg">
+        <div className="p-5 m-auto bg-blue-50 w-1/2  text-blue-800 rounded-lg">
           <span
             onClick={() => setScore(null)}
-            className="font-bold  text-3xl float-right hover: text-sky-800  ml-3 cursor-pointer"
+            className="font-bold  text-3xl float-right hover: text-blue-800  ml-3 cursor-pointer"
           >
             &times;
           </span>
@@ -81,7 +81,7 @@ export default function Test() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col items-center text-sky-800 justify-center ">
+      <div className="flex flex-col items-center text-blue-800 justify-center ">
         <p className="mt-16 font-bold text-4xl">
           {testTitle.filter((v) => v.name === type)[0].title}
         </p>
@@ -132,7 +132,7 @@ export default function Test() {
           })}
           <div className="flex justify-center m-6">
             <button
-              className="bg-indigo-900 text-white rounded-2xl w-[100px] p-3 font-semibold "
+              className="bg-blue-900 text-white rounded-2xl w-[100px] p-3 font-semibold "
               type="submit"
             >
               Submit

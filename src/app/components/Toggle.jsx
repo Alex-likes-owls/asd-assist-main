@@ -15,14 +15,14 @@ export default function Toggle() {
   return (
     <div
       className={`flex w-14 h-7 rounded-full ${
-        !toggle ? "bg-sky-500" : "bg-sky-400"
+        !toggle ? "bg-blue-500" : "bg-blue-400"
       }`}
       onClick={() => {
         dispatch(changeToggle());
       }}
     >
       <span
-        className={`w-7 h-7 bg-white text-sky-950 text-xs font-semibold rounded-full flex justify-center items-center transition-all duration-500 ${
+        className={`w-7 h-7 bg-white text-blue-950 text-xs font-semibold rounded-full flex justify-center items-center transition-all duration-500 ${
           !toggle ? "ml-0" : "ml-7"
         }`}
       >

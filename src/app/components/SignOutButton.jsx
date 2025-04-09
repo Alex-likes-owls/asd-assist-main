@@ -5,10 +5,10 @@ import { TbLogout } from "react-icons/tb";
 export default function SignOutButton() {
   return (
     <button
-      className=" cursor-pointer border-sky-800 border-2 rounded-lg"
+      className=" cursor-pointer border-blue-800 border-2 rounded-lg"
       onClick={() => logout()}
     >
-      <TbLogout className="size-8 text-sky-800 p-1" />
+      <TbLogout className="size-8 text-blue-800 p-1" />
     </button>
   );
 }

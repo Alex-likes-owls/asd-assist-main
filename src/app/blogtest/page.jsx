@@ -31,15 +31,15 @@ export default function BlogTest() {
   }
 
   return (
-    <div className="text-sky-800 mt-16 flex flex-col items-center">
+    <div className="text-blue-800 md:mt-16 flex flex-col items-center">
       <div
-        className={`h-full fixed z-20 w-full bg-sky-950 bg-opacity-[0.4] pt-24 top-0 ${
+        className={`h-full fixed z-20 w-full bg-blue-950 bg-opacity-[0.4] pt-24 top-0 ${
           popdata ? "block" : "hidden"
         }`}
       >
-        <div className="p-5 m-auto bg-sky-50 w-1/2  rounded-lg">
+        <div className="p-5 m-auto bg-blue-50 w-1/2  rounded-lg">
           <span
-            className="font-bold  text-3xl float-right hover: text-sky-600 cursor-pointer ml-3"
+            className="font-bold  text-3xl float-right hover: text-blue-600 cursor-pointer ml-3"
             onClick={() => setPopdata(null)}
           >
             &times;
@@ -76,7 +76,7 @@ export default function BlogTest() {
           <input
             type="text"
             name="searchbar"
-            className="bg-sky-50 rounded-full pl-11 p-3 w-96"
+            className="bg-blue-50 rounded-full pl-11 p-3 md:w-96 w-80"
             id="searchbar"
             placeholder="Search"
             onChange={(e) =>

@@ -19,19 +19,19 @@ export default function Home() {
   }, [toggle]);
 
   return (
-    <div className="bg-white ">
+    <div className="md:bg-blue-100 bg-white">
       <div
         id="Home"
-        className="md:h-screen flex flex-col justify-center text-sky-800"
+        className="md:h-screen flex flex-col justify-center text-blue-800"
       >
         <div
-          className={`h-full fixed z-20 w-full top-0 bg-sky-950 bg-opacity-[0.4] pt-24 ${
+          className={`h-full fixed z-20 w-full top-0 bg-blue-950 bg-opacity-[0.4] pt-24 ${
             popdata ? "block" : "hidden"
           }`}
         >
-          <div className="p-5 m-auto bg-sky-50 w-1/2  text-sky-800 rounded-lg">
+          <div className="p-5 m-auto bg-blue-50 w-1/2  text-blue-800 rounded-lg">
             <span
-              className="font-bold  text-3xl float-right hover: text-sky-800 cursor-pointer ml-3"
+              className="font-bold  text-3xl float-right hover: text-blue-800 cursor-pointer ml-3"
               onClick={() => setPopdata(null)}
             >
               &times;
@@ -55,17 +55,17 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col-reverse justify-around items-center m-4">
-          <div className="flex-col-reverse md:flex-row tw">
+        <div className="md:flex-row flex flex-col-reverse justify-around items-center m-4">
+          <div className="flex-col-reverse md:flex-row md:w-2/5">
             <p className="text-5xl font-bold">ASD-Assist</p>
-            <p className="text-xl mt-2 w-11/12 text-sky-800">
+            <p className="text-xl mt-2  text-blue-800">
               {!toggle
                 ? " A website designed to debunk false stereotypes and spread awareness of Autistic Spectrum Disorder(ASD). Take some self-assessments, read some fun articles, and simply enjoy yourself."
                 : "Аутизмын хүрээний эмгэг (АХЭ)-ын буруу ойлголтуудыг үгүйсгэж, өвчний талаарх мэдээлэл түгээх зорилготой вэбсайт. Өөрийгөө аутизмтай эсэхээ шалгаж сонирхолтой тестүүд өгч, энэхүү өвчний тухай нийтлэлүүдийг уншиж үзээрэй."}
             </p>
           </div>
           <Image
-            className="rounded-lg mb-6"
+            className="rounded-lg md:mb-0 mb-6 md:w-4/12"
             src="/Sonic-Logo.gif"
             width={500}
             height={500}
@@ -73,9 +73,10 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="bg-indigo-900 text-white m-5 rounded-2xl px-5 py-8 relative overflow-hidden">
-        <div className="w-44 h-44 rounded-full bg-pink-200/20 absolute -right-28"></div>
-        <div className="w-44 h-44 rounded-full bg-pink-200/20 absolute -top-20 -left-12"></div>
+      <div className="bg-indigo-900 md:hidden text-white m-5 rounded-2xl px-5 py-8 relative overflow-hidden">
+        <div className="w-48 h-48 rounded-full bg-pink-200/20 absolute -right-28"></div>
+        <div className="w-36 h-36 rounded-full bg-pink-200/20 absolute -top-24 right-20"></div>
+        <div className="w-48 h-48 rounded-full bg-pink-200/20 absolute -top-20 -left-12"></div>
         <p className="font-bold text-3xl">
           {!toggle ? "Test collection" : "Тестийн сан"}
         </p>
@@ -85,7 +86,7 @@ export default function Home() {
             : "Бидний нэг тестийг өгч үзээрэй!"}
         </p>
         <Link
-          className="bg-white text-indigo-900 rounded-2xl p-3 font-semibold"
+          className="bg-white text-blue-900 rounded-2xl p-3 font-semibold"
           href={"/blogtest?t=tests"}
         >
           {!toggle ? "Get Started" : "Эхлэх"}
@@ -94,13 +95,15 @@ export default function Home() {
       {data.map((val, ind) => {
         return (
           <div
-            className={`text-sky-800 ${ind === 1 ? "bg-white" : "bg-sky-50"}`}
+            className={`text-blue-800 ${ind === 1 ? "bg-white" : "bg-blue-50"}`}
             id={"About"}
             key={ind}
           >
             <div className="flex flex-col items-center">
-              <p className="text-4xl font-bold mt-14">{val.title}</p>
-              <p className="md:w-1/2 m-5">{val.description}</p>
+              <p className="text-4xl font-bold mt-14 text-center">
+                {val.title}
+              </p>
+              <p className="md:w-1/2 m-5 w-3/4">{val.description}</p>
               <div
                 className="md:flex-row flex flex-col justify-around items-center flex-wrap"
                 key={ind}
