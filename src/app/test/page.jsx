@@ -11,6 +11,7 @@ export default function Test() {
   const [object, setObject] = useState({});
   const [score, setScore] = useState(undefined);
   const toggle = useSelector((state) => state.counter.toggle);
+  console.log("data", data);
   // useEffect(() => {
   //   setData(toggle ? testData.aqTest.mong : testData.aqTest.english);
   // }, [toggle]);
@@ -80,49 +81,58 @@ export default function Test() {
           </p>
         </div>
       </div>
-      <div className=" flex flex-col items-center text-sky-800 justify-center ">
+      <div className="flex flex-col items-center text-sky-800 justify-center ">
         <p className="mt-16 font-bold text-4xl">
           {testTitle.filter((v) => v.name === type)[0].title}
         </p>
-        <div className="m-3 w-2/3 ">
+        <div className="p-3">
           {data.map((val, ind) => {
             return (
-              <div key={ind}>
-                <p className="text-2xl font-semibold m-2">
-                  {ind + 1}. {val.question}
-                </p>
-                {val.choices.map((v, i) => {
-                  return (
-                    <div key={i}>
-                      <input
-                        className="m-2"
-                        type="radio"
-                        name={val.question}
-                        value={v.score}
-                        id={val.question + i.toString()}
-                        onChange={() => {
-                          setObject((prev) => {
-                            let newObj = { ...prev };
-                            newObj[`question-${ind}`] = v.score;
-                            return newObj;
-                          });
-                        }}
-                      />
-                      <label
-                        className="text-lg"
-                        htmlFor={val.question + i.toString()}
+              <div key={ind} className="border-b border-black mb-4 pb-4">
+                <div className="flex gap-1">
+                  <p className="text-gray-800 mb-2 font-medium">{ind + 1}.</p>
+                  <p className="text-gray-800 mb-2 font-medium">
+                    {val.question}
+                  </p>
+                </div>
+
+                <div className="flex justify-between gap-2">
+                  {val.choices.map((v, i) => {
+                    return (
+                      <div
+                        key={i}
+                        className="flex flex-col items-center text-center gap-2"
                       >
-                        {v.answer}
-                      </label>
-                    </div>
-                  );
-                })}
+                        <input
+                          className="w-8 h-8 "
+                          type="radio"
+                          name={val.question}
+                          value={v.score}
+                          id={val.question + i.toString()}
+                          onChange={() => {
+                            setObject((prev) => {
+                              let newObj = { ...prev };
+                              newObj[`question-${ind}`] = v.score;
+                              return newObj;
+                            });
+                          }}
+                        />
+                        <label
+                          className="text-xs min-w-[95px] h-w-[40px]"
+                          htmlFor={val.question + i.toString()}
+                        >
+                          {v.answer}
+                        </label>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             );
           })}
           <div className="flex justify-center m-6">
             <button
-              className="text-sky-50 rounded-lg text-2xl font-semibold w-32 h-14 cursor-pointer bg-sky-800 hover:bg-sky-600"
+              className="bg-indigo-900 text-white rounded-2xl w-[100px] p-3 font-semibold "
               type="submit"
             >
               Submit

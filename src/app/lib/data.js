@@ -136,7 +136,7 @@ let pagesData = [
 
 export default pagesData;
 export { mongpagesData };
-export { testData };
+export { testData, cardData };
 
 let mongcardData = [
   {

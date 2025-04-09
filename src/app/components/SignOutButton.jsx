@@ -1,14 +1,14 @@
 "use client";
 
 import { logout } from "../../actions/auth";
-
+import { TbLogout } from "react-icons/tb";
 export default function SignOutButton() {
   return (
     <button
-      className="m-5 text-sky-50 rounded-lg text-xl font-semibold w-32 h-14 cursor-pointer bg-sky-800 hover:bg-sky-600"
+      className=" cursor-pointer border-sky-800 border-2 rounded-lg"
       onClick={() => logout()}
     >
-      Sign Out
+      <TbLogout className="size-8 text-sky-800 p-1" />
     </button>
   );
 }
