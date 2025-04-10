@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import testData from "../lib/testData";
 import { useSelector } from "react-redux";
 import { testData as testTitle } from "../lib/data";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useRouter } from "next/navigation";
 import axios from "axios";
 
 export default function Test() {
@@ -12,14 +12,20 @@ export default function Test() {
   const [object, setObject] = useState({});
   const [score, setScore] = useState(undefined);
   const toggle = useSelector((state) => state.counter.toggle);
-  // useEffect(() => {
-  //   setData(toggle ? testData.aqTest.mong : testData.aqTest.english);
-  // }, [toggle]);
+
+  const router = useRouter();
   const searchParams = useSearchParams();
   const type = searchParams.get("type");
 
   useEffect(() => {
-    setData(toggle ? testData[type].mong : testData[type].english);
+    if (type) {
+      if (type in testData) {
+        setData(toggle ? testData[type].mong : testData[type].english);
+      } else {
+        alert("Invalid test type");
+        router.push("/");
+      }
+    }
   }, [toggle, type]);
 
   if (!data) {
