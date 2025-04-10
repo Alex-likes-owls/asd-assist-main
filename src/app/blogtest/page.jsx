@@ -37,9 +37,9 @@ export default function BlogTest() {
           popdata ? "block" : "hidden"
         }`}
       >
-        <div className="p-5 m-auto bg-blue-50 md:w-1/2 w-full rounded-lg">
+        <div className="p-5 m-auto bg-blue-50 relative md:w-1/2 w-5/6 rounded-3xl">
           <span
-            className="font-bold  text-3xl float-right hover: text-blue-600 cursor-pointer ml-3"
+            className="font-bold absolute top-3 right-7 text-3xl float-right hover: text-blue-600 cursor-pointer"
             onClick={() => setPopdata(null)}
           >
             &times;
@@ -56,7 +56,7 @@ export default function BlogTest() {
               className="rounded-lg m-3"
             ></Image>
             <div className="md:max-h-48 h-96 overflow-x-hidden overflow-y-auto">
-              <p className="m-5 text-justify w-11/12">
+              <p className="text-justify">
                 {popdata ? popdata.article : "nada"}
               </p>
             </div>
@@ -78,7 +78,7 @@ export default function BlogTest() {
             name="searchbar"
             className="bg-blue-50 rounded-full pl-11 p-3 md:w-96 w-80"
             id="searchbar"
-            placeholder="Search"
+            placeholder={toggle ? "Хайх" : "Search"}
             onChange={(e) =>
               setData(
                 all.filter((obj) =>
@@ -90,7 +90,7 @@ export default function BlogTest() {
           <FaSearch className="absolute ml-3 size-5" />
         </div>
       </div>
-      <div className="justify-around  flex flex-wrap ">
+      <div className="justify-center p-5 flex flex-wrap gap-7">
         {data.map((val, ind) => {
           if (t === "articles") {
             return (

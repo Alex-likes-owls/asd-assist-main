@@ -10,7 +10,7 @@ export default function SignInButton() {
       className="flex items-center cursor-pointer p-5"
     >
       <FaUser className="m-1 size-10 rounded-full text-blue-900 md:text-blue-100" />
-      <p className="md:text-white text-blue-900 font-semibold ml-1">Sign in</p>
+      <p className="md:text-white text-blue-900 font-semibold ml-1">Нэвтрэх</p>
     </div>
   );
 }

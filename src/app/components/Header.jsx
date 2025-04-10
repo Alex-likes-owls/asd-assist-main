@@ -3,6 +3,7 @@ import SignInButton from "./SignInButton";
 import { auth } from "../../../auth";
 import Image from "next/image";
 import SignOutButton from "./SignOutButton";
+import Toggle from "./Toggle";
 
 export default async function Header() {
   const session = await auth();
@@ -27,15 +28,23 @@ export default async function Header() {
             </p>
           </div>
         </Link>
-        <SignOutButton />
+        <div className="flex items-center gap-6">
+          <Toggle />
+          <SignOutButton />
+        </div>
       </div>
     );
   } else {
-    button = <SignInButton />;
+    button = (
+      <div>
+        <SignInButton />
+        <Toggle />
+      </div>
+    );
   }
   return (
     <div className="text-white md:hidden w-full flex justify-between items-center md:mt-14 top-0 z-10">
-      <div className="flex justify-around items-center w-full mx-5 py-5">
+      <div className="flex justify-around items-center w-full mx-5 pt-5">
         {button}
       </div>
     </div>
