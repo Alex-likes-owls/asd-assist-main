@@ -128,7 +128,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "/Users/imac-1/Documents/asd-assist-main/src/generated/prisma",
+      "value": "C:\\Users\\sapli\\OneDrive\\asd-assist-main\\src\\generated\\prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -137,16 +137,17 @@ const config = {
     "binaryTargets": [
       {
         "fromEnvVar": null,
-        "value": "darwin-arm64",
+        "value": "windows",
         "native": true
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "/Users/imac-1/Documents/asd-assist-main/prisma/schema.prisma",
+    "sourceFilePath": "C:\\Users\\sapli\\OneDrive\\asd-assist-main\\prisma\\schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": null
+    "rootEnvPath": null,
+    "schemaEnvPath": "../../../.env"
   },
   "relativePath": "../../../prisma",
   "clientVersion": "6.6.0",
@@ -155,7 +156,7 @@ const config = {
     "db"
   ],
   "activeProvider": "postgresql",
-  "postinstall": true,
+  "postinstall": false,
   "inlineDatasources": {
     "db": {
       "url": {
