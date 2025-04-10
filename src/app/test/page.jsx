@@ -88,12 +88,10 @@ export default function Test() {
         <div className="p-3">
           {data.map((val, ind) => {
             return (
-              <div key={ind} className="border-b border-black mb-4 pb-4">
+              <div key={ind} className="border-b border-blue-950 mb-4 pb-4">
                 <div className="flex gap-1">
-                  <p className="text-gray-800 mb-2 font-medium">{ind + 1}.</p>
-                  <p className="text-gray-800 mb-2 font-medium">
-                    {val.question}
-                  </p>
+                  <p className="text-blue-800 mb-2 ">{ind + 1}.</p>
+                  <p className="text-blue-800 mb-2 ">{val.question}</p>
                 </div>
 
                 <div className="flex justify-between gap-2">
@@ -118,7 +116,7 @@ export default function Test() {
                           }}
                         />
                         <label
-                          className="text-xs min-w-[95px] h-w-[40px]"
+                          className="text-xs w-2/3"
                           htmlFor={val.question + i.toString()}
                         >
                           {v.answer}

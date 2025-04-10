@@ -37,7 +37,7 @@ export default function BlogTest() {
           popdata ? "block" : "hidden"
         }`}
       >
-        <div className="p-5 m-auto bg-blue-50 w-1/2  rounded-lg">
+        <div className="p-5 m-auto bg-blue-50 md:w-1/2 w-full rounded-lg">
           <span
             className="font-bold  text-3xl float-right hover: text-blue-600 cursor-pointer ml-3"
             onClick={() => setPopdata(null)}
@@ -55,7 +55,7 @@ export default function BlogTest() {
               height={300}
               className="rounded-lg m-3"
             ></Image>
-            <div className="max-h-48 overflow-x-hidden overflow-y-auto">
+            <div className="md:max-h-48 h-96 overflow-x-hidden overflow-y-auto">
               <p className="m-5 text-justify w-11/12">
                 {popdata ? popdata.article : "nada"}
               </p>
