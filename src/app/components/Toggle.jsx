@@ -24,7 +24,7 @@ export default function Toggle() {
         alt="flag"
         width={30}
         height={30}
-        className="rounded-full"
+        className="rounded-full cursor-pointer"
       ></Image>
     </div>
   );

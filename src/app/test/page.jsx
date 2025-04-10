@@ -6,7 +6,6 @@ import { useSelector } from "react-redux";
 import { testData as testTitle } from "../lib/data";
 import { useSearchParams } from "next/navigation";
 import axios from "axios";
-import Loading from "../components/Loading/Loading";
 
 export default function Test() {
   const [data, setData] = useState(null);
@@ -18,7 +17,6 @@ export default function Test() {
   // }, [toggle]);
   const searchParams = useSearchParams();
   const type = searchParams.get("type");
-  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     setData(toggle ? testData[type].mong : testData[type].english);
@@ -29,20 +27,11 @@ export default function Test() {
   }
   return (
     <div className="w-full h-full relative">
-      <div
-        className={`w-screen h-screen absolute bottom-0 left-0 ${
-          loading ? "" : "hidden"
-        }`}
-      >
-        <Loading />
-      </div>
       <form
         className="w-full h-full"
         onSubmit={async (e) => {
           e.preventDefault();
-          setLoading(true);
           let myArr = Object.values(object);
-
           if (data && myArr.length !== data.length) {
             alert(
               toggle
@@ -60,7 +49,6 @@ export default function Test() {
             testName: type,
             ts: Date.now(),
           });
-          setLoading(false);
           if (res.status !== 200) {
             console.log(res.data);
             return;
@@ -69,11 +57,11 @@ export default function Test() {
         }}
       >
         <div
-          className={`h-full fixed z-20 w-full bg-blue-950 bg-opacity-[0.4] pt-24  ${
+          className={`h-full fixed z-20 w-full top-0 bg-blue-950 bg-opacity-[0.4] pt-24  ${
             score ? "block" : "hidden"
           }`}
         >
-          <div className="p-5 m-auto bg-blue-50 w-1/2  text-blue-800 rounded-lg">
+          <div className="p-5 m-auto bg-blue-50 md:w-1/2 w-5/6  text-blue-800 rounded-lg">
             <span
               onClick={() => setScore(null)}
               className="font-bold  text-3xl float-right hover: text-blue-800  ml-3 cursor-pointer"

@@ -5,7 +5,7 @@ import Image from "next/image";
 export const Card = ({ data, setPopdata }) => {
   return (
     <div className=" flex flex-col justify-evenly relative p-5 overflow-hidden items-center md:w-4/12 shadow-lg h-[620px] text-center bg-white rounded-3xl">
-      <div className="w-96 h-80 rounded-full absolute -bottom-52 -left-44 bg-blue-50 animate-spin !duration-[60s]"></div>
+      <div className="w-96 h-80 rounded-full absolute -bottom-52 -left-44 bg-blue-50 animate-spin"></div>
       <div className="w-96 h-96 rounded-full absolute -top-44 -right-44 bg-blue-50"></div>
       <p className="text-3xl text-sky-950 font-bold relative z-10">
         {data.title}

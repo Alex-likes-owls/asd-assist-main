@@ -3,14 +3,24 @@ import prisma from "../../../../lib/prisma";
 
 export async function GET(req) {
   const session = await auth();
-  console.log(session);
   if (session && session.user) {
     let email = session.user.email;
-    const user = await prisma.user.findFirst({
-      where: { email: email },
+    const records = await prisma.record.findMany({
+      where: {
+        user: {
+          email: email,
+        },
+      },
+    });
+    const data = records.map((v) => {
+      return {
+        score: v.score,
+        testName: v.testName,
+        ts: v.ts.toString(),
+      };
     });
     return Response.json({
-      data: { user },
+      data: data,
     });
   }
   return Response.json("Not authenticated", {
