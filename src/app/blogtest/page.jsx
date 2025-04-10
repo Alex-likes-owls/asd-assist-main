@@ -31,15 +31,15 @@ export default function BlogTest() {
   }
 
   return (
-    <div className="text-sky-950 mt-16 flex flex-col items-center">
+    <div className="text-blue-800 md:mt-16 flex flex-col items-center">
       <div
-        className={`h-full fixed z-20 w-full bg-sky-950 bg-opacity-[0.4] pt-24 top-0 ${
+        className={`h-full fixed z-20 w-full bg-blue-950 bg-opacity-[0.4] pt-24 top-0 ${
           popdata ? "block" : "hidden"
         }`}
       >
-        <div className="p-5 m-auto bg-sky-50 w-1/2  rounded-lg">
+        <div className="p-5 m-auto bg-blue-50 relative md:w-1/2 w-5/6 rounded-3xl">
           <span
-            className="font-bold  text-3xl float-right hover: text-sky-600 cursor-pointer ml-3"
+            className="font-bold absolute top-3 right-7 text-3xl float-right hover: text-blue-600 cursor-pointer"
             onClick={() => setPopdata(null)}
           >
             &times;
@@ -55,8 +55,8 @@ export default function BlogTest() {
               height={300}
               className="rounded-lg m-3"
             ></Image>
-            <div className="max-h-48 overflow-x-hidden overflow-y-auto">
-              <p className="m-5 text-justify w-11/12">
+            <div className="md:max-h-48 h-96 overflow-x-hidden overflow-y-auto">
+              <p className="text-justify">
                 {popdata ? popdata.article : "nada"}
               </p>
             </div>
@@ -66,8 +66,8 @@ export default function BlogTest() {
       <p className="m-6 font-bold text-4xl">
         {t[0].toUpperCase() + t.slice(1, 8)}
       </p>
-      <div className="flex justify-between items-center">
-        <p className="font-semibold text-lg mb-4 w-1/2 text-center">
+      <div className="flex flex-col justify-center items-center">
+        <p className="font-semibold text-lg mb-8 w-2/3 text-center">
           {toggle
             ? "Тодруулсан хэсэг дээр байршуулаагүй бүгдийг та уншиж үзээрэй ٩(^ᗜ^ )و ´-"
             : "Please enjoy the ones that were not in the highlights section of the home page ٩(^ᗜ^ )و ´-"}
@@ -76,9 +76,9 @@ export default function BlogTest() {
           <input
             type="text"
             name="searchbar"
-            className="bg-sky-50 rounded-full pl-10 p-2"
+            className="bg-blue-50 rounded-full pl-11 p-3 md:w-96 w-80"
             id="searchbar"
-            placeholder="Search"
+            placeholder={toggle ? "Хайх" : "Search"}
             onChange={(e) =>
               setData(
                 all.filter((obj) =>
@@ -87,10 +87,10 @@ export default function BlogTest() {
               )
             }
           />
-          <FaSearch className="absolute ml-3" />
+          <FaSearch className="absolute ml-3 size-5" />
         </div>
       </div>
-      <div className="justify-around  flex flex-wrap ">
+      <div className="justify-center p-5 flex flex-wrap gap-7">
         {data.map((val, ind) => {
           if (t === "articles") {
             return (

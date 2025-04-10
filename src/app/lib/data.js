@@ -68,13 +68,13 @@ let cardData = [
 let testData = [
   {
     id: 0,
-    imageSrc: "/tbh (2).png",
-    imageId:
-      "(Created by Twitter user @acmeiku, the 'tbh creature' is jokingly used as a symbol of ASD online)",
+    imageSrc: "/infinity sybol.png",
+    imageId: "(ASD symbol)",
     title: "AQ-10",
     description:
       "The AQ-10 Autism Spectrum Quotient (AQ) is a 10-item questionnare designed to measure how many autistic traits an individual shows.",
     threshold: 6,
+    name: "aqTest",
   },
   {
     id: 1,
@@ -85,27 +85,31 @@ let testData = [
     description:
       "The Adult ADHD Self-Report Scale (ASRS-5) is a 6-item questionnaire designed to measure Attention Deficit Hyperactivity Disorder (ADHD) traits.",
     threshold: 14,
+    name: "asrsTest",
   },
   {
     id: 2,
-    imageSrc: "/TAS.webp",
+    imageSrc: "/tas.png",
     imageId: "(A self-report questionnare)",
     title: "TAS",
     description:
       "The Toronto Alexithymia Scale(TAS) is a 20-item questionnaire designed to measure how many Alexithymia traits an individual shows.",
     threshold: 52,
+    name: "tasTest",
   },
 ];
 let inventoryData = [
   {
     id: 0,
     title: "Education",
+    imageSrc: "/Book lover-bro.png",
     description:
       "Within the website, I included multiple articles about ASD in hopes of educating those who are curios about the disorder. As autism is a spectrum, two autsitic people will never have the exact same level of symptoms, but it's always important to know about these symptoms.",
   },
   {
     id: 1,
     title: "Questionnares",
+    imageSrc: "/Exams-bro.png",
     description:
       "There are a few questionnares to take for those interested in calculating how many traits they exhibit of ASD, ADHD, and Alexithymia. These are not official diagnoses, and are simply tools for people to use to decide on whether or not to contact a professional for an evaluation.",
   },
@@ -133,7 +137,7 @@ let pagesData = [
 
 export default pagesData;
 export { mongpagesData };
-export { testData };
+export { testData, cardData };
 
 let mongcardData = [
   {
@@ -203,13 +207,13 @@ let mongcardData = [
 let mongtestData = [
   {
     id: 0,
-    imageSrc: "/tbh (2).png",
-    imageId:
-      "(Twitter хэрэглэгч @acmeiku бүтээсэн, 'tbh creature' нь онлайнд аутизмтай холбоотой байдлаар хэрэглэгддэг)",
+    imageSrc: "/infinity sybol.png",
+    imageId: "(Аутизм тест)",
     title: "AQ-10",
     description:
       "The AQ-10 Autism Spectrum Quotient (AQ) нь хувь хүн хэдэн аутизмын шинж тэмдэгтэй болохыг хэмжих зорилготой 10 асуулттай тест юм.",
-    page: "/AQ",
+    name: "aqTest",
+    threshold: 6,
   },
   {
     id: 1,
@@ -219,28 +223,32 @@ let mongtestData = [
     title: "ASRS-5",
     description:
       "Насанд хүрэгчдийн ADHD Өөрийгөө Тодорхойлох Үнэлгээ (ASRS-5) нь Анхаарал Дутмагших, Хэт Хөдөлгөөнтөх эмгэг (ADHD)-ын шинж тэмдгийг хэмжих зорилготой 6 асуулттай асуулга юм.",
-    page: "/ASRS",
+    name: "asrsTest",
+    threshold: 14,
   },
   {
     id: 2,
-    imageSrc: "/TAS.webp",
+    imageSrc: "/tas.png",
     imageId: "(Өөрийгөө тодорхойлох асуулга)",
     title: "TAS",
     description:
       "Торонто Алекситимиа Скала (TAS) нь хувь хүн хэдэн Алекситимиа шинж тэмдэгтэй болохыг хэмжих зорилготой 20 асуулттай тест юм.",
-    page: "/AQ",
+    name: "tasTest",
+    threshold: 52,
   },
 ];
 let monginventoryData = [
   {
     id: 0,
     title: "Мэдээлэл",
+    imageSrc: "/Book lover-bro.png",
     description:
       "Вэбсайтад би аутизмтай холбоотой олон нийтлэл оруулсан бөгөөд энэ нь уг өвчнийг сонирхож буй хүмүүст мэдээлэл олгох зорилготой. Хоёр аутизмтай хүн яг адилхан шинж тэмдгүүдийг үзүүлдэггүй боловч аутизмын шинж тэмдгүүдийн талаар мэдэх нь үргэлж чухал байдаг.",
   },
   {
     id: 1,
     title: "Асуулга",
+    imageSrc: "/Exams-bro.png",
     description:
       "Аутизм, ADHD, болон Алекситимиагийн шинж тэмдгүүдийг хэр их үзүүлж байгаагаа тооцох сонирхолтой хүмүүст зориулсан хэд хэдэн асуулга бий. Эдгээр нь албан ёсны оношлогоо биш бөгөөд мэргэжлийн хүнтэй холбоо барих шаардлагатай эсэхийг шийдэхэд зориулсан хэрэгсэл юм.",
   },
