@@ -20,7 +20,9 @@ export default async function Profile() {
               className="rounded-full"
             ></Image>
             <div className="my-5">
-              <p className="text-4xl font-bold">{session.user.name}</p>
+              <p className="text-4xl font-bold text-center">
+                {session.user.name}
+              </p>
               <p className="font-semibold text-lg ">{session.user.email}</p>
             </div>
           </div>
