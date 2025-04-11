@@ -36,7 +36,7 @@ export default async function Header() {
     );
   } else {
     button = (
-      <div>
+      <div className="flex items-center gap-6">
         <SignInButton />
         <Toggle />
       </div>
