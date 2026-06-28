@@ -35,7 +35,7 @@ export default function Home() {
         >
           <div className="p-5 m-auto bg-blue-50 relative md:w-1/2 w-5/6 rounded-3xl">
             <span
-              className="font-bold absolute top-3 right-7 text-3xl float-right hover: text-blue-800 cursor-pointer "
+              className="font-bold absolute top-3 right-7 text-3xl float-right cursor-pointer "
               onClick={() => setPopdata(null)}
             >
               &times;
@@ -65,9 +65,7 @@ export default function Home() {
           <IoExtensionPuzzleSharp className="md:block hidden w-[40vh] h-[40vh] rounded-full text-blue-100 absolute top-[0] left-[10vh] rotate-45" />
           <div className="flex-col-reverse md:flex-row md:w-1/3">
             <div className="relative flex w-max">
-              <p className="text-5xl font-bold relative z-10 w-fit">
-                ASD-Assist
-              </p>
+              <p className="text-5xl font-bold relative z-10 w-fit">Autiloid</p>
               <FaStar className="text-yellow-400 animate-spin size-12  absolute -top-5 -right-7" />
             </div>
             <p className="text-xl mt-2 relative z-10 text-blue-800">
