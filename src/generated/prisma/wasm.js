@@ -130,6 +130,39 @@ exports.Prisma.RecordScalarFieldEnum = {
   userId: 'userId'
 };
 
+exports.Prisma.TestScalarFieldEnum = {
+  id: 'id',
+  imageSrc: 'imageSrc',
+  imageId: 'imageId',
+  title: 'title',
+  desc: 'desc',
+  threshold: 'threshold',
+  lan: 'lan'
+};
+
+exports.Prisma.QuestionScalarFieldEnum = {
+  id: 'id',
+  questions: 'questions',
+  testId: 'testId'
+};
+
+exports.Prisma.ChoiceScalarFieldEnum = {
+  id: 'id',
+  answer: 'answer',
+  score: 'score',
+  questionId: 'questionId'
+};
+
+exports.Prisma.ArticleScalarFieldEnum = {
+  id: 'id',
+  imageSrc: 'imageSrc',
+  imageId: 'imageId',
+  title: 'title',
+  desc: 'desc',
+  article: 'article',
+  lan: 'lan'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -143,7 +176,11 @@ exports.Prisma.QueryMode = {
 
 exports.Prisma.ModelName = {
   User: 'User',
-  Record: 'Record'
+  Record: 'Record',
+  Test: 'Test',
+  Question: 'Question',
+  Choice: 'Choice',
+  Article: 'Article'
 };
 
 /**

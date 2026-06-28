@@ -1,17 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import Toggle from "./Toggle";
-import Header from "./Header";
-import SignOutButton from "./SignOutButton";
 import SignInButton from "./SignInButton";
 import { auth } from "../../../auth";
 import { GoHome } from "react-icons/go";
 import { IoInformationCircleOutline } from "react-icons/io5";
-import { TbNews } from "react-icons/tb";
+import { SlNotebook } from "react-icons/sl";
 import { GoChecklist } from "react-icons/go";
 
 export default async function Navbar() {
   // const [toggle, setToggle] = useState(false);
+  console.log("Reaches here", process.env.AUTH_GITHUB_SECRET);
   const session = await auth();
   let button;
   if (session?.user) {
@@ -41,7 +40,7 @@ export default async function Navbar() {
           <IoInformationCircleOutline className="size-8" />
         </Link>
         <Link className="m-4 text-lg" href={"/blogtest?t=articles"}>
-          <TbNews className="size-7" />
+          <SlNotebook className="size-6" />
         </Link>
         <Link className="m-4 text-lg" href={"/blogtest?t=tests"}>
           <GoChecklist className="size-7" />

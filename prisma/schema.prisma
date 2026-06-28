@@ -21,10 +21,47 @@ model User {
 }
 
 model Record {
-  id     Int    @id @default(autoincrement())
-  score  Int
-  testName   String
-  ts     BigInt
-  userId Int
-  user   User   @relation(fields: [userId], references: [id])
+  id       Int    @id @default(autoincrement())
+  score    Int
+  testName String
+  ts       BigInt
+  userId   Int
+  user     User   @relation(fields: [userId], references: [id])
+}
+
+model Test {
+  id        Int        @id @default(autoincrement())
+  imageSrc  String
+  imageId   String
+  title     String
+  desc      String
+  threshold Int
+  lan       String
+  questions Question[]
+}
+
+model Question {
+  id        Int      @id @default(autoincrement())
+  questions String
+  choices   Choice[]
+  testId    Int
+  test      Test     @relation(fields: [testId], references: [id])
+}
+
+model Choice {
+  id         Int      @id @default(autoincrement())
+  answer     String
+  score      Int
+  questionId Int
+  question   Question @relation(fields: [questionId], references: [id])
+}
+
+model Article {
+  id       Int    @id @default(autoincrement())
+  imageSrc String
+  imageId  String
+  title    String
+  desc     String
+  article  String
+  lan      String
 }
