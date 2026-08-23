@@ -14,10 +14,46 @@ datasource db {
   // url      = env("DATABASE_URL")
 }
 
+enum UserRole {
+  USER
+  ADMIN
+}
+
 model User {
-  id      Int      @id @default(autoincrement())
-  email   String   @unique
-  records Record[]
+  id            Int       @id @default(autoincrement())
+  name          String?
+  email         String    @unique
+  emailVerified DateTime?
+  image         String?
+  role          UserRole  @default(USER)
+  accounts      Account[]
+  sessions      Session[]
+  records       Record[]
+}
+
+model Account {
+  userId            Int
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([provider, providerAccountId])
+}
+
+model Session {
+  sessionToken String   @unique
+  userId       Int
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 model Record {
@@ -34,7 +70,7 @@ model Test {
   imageSrc  String
   imageId   String
   title     String
-  desc      String
+  description      String
   threshold Int
   lan       String
   questions Question[]
@@ -61,7 +97,7 @@ model Article {
   imageSrc String
   imageId  String
   title    String
-  desc     String
+  description     String
   article  String
   lan      String
 }

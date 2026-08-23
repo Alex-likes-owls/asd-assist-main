@@ -13,8 +13,11 @@ import { FaStar } from "react-icons/fa";
 
 export default function Home() {
   const toggle = useSelector((state) => state.counter.toggle);
-
   const [data, setData] = useState(pagesData);
+  
+  // const getData = async =>() {
+  //   const res
+  // } 
 
   const [popdata, setPopdata] = useState(null);
 

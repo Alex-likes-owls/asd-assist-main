@@ -19,12 +19,36 @@ export default function Test() {
 
   useEffect(() => {
     if (type) {
-      if (type in testData) {
-        setData(toggle ? testData[type].mong : testData[type].english);
-      } else {
-        alert("Invalid test type");
-        router.push("/");
-      }
+      axios.get("api/create").then((res) => {
+        if (res.status === 200) {
+          // if (type in res.data.mn || type in res.data.en) {
+          //   setData(toggle ? res.data.mn : res.data.en);
+          // } else {
+          //   alert("Invalid test type");
+          //   router.push("/");
+          // }
+          console.log(res.data);
+          if (toggle) {
+            res.data.mn.forEach((a) => {
+              // console.log(a, type);
+              if (type === a.title) {
+                // console.log("here:", [a]);
+                setData([a]);
+                // console.log(data);
+              }
+            });
+          } else
+            res.data.en.forEach((a) => {
+              // console.log(a, type);
+              if (type === a.title) {
+                // console.log("here:", [a]);
+                setData([a]);
+              }
+            });
+        }
+      });
+      // if (type in testData) {
+      //   setData(toggle ? testData[type].mong : testData[type].english);
     }
   }, [toggle, type]);
 
@@ -38,11 +62,12 @@ export default function Test() {
         onSubmit={async (e) => {
           e.preventDefault();
           let myArr = Object.values(object);
-          if (data && myArr.length !== data.length) {
+          console.log(myArr.length, data[0].questions.length);
+          if (data && myArr.length !== data[0].questions.length) {
             alert(
               toggle
                 ? "Тест дутуу бөглөсөн байна"
-                : "The test has not been finished"
+                : "The test has not been finished",
             );
             return;
           }
@@ -81,20 +106,20 @@ export default function Test() {
             <p className="text-center font-semibold">
               {toggle
                 ? `Хэрэв та ${
-                    testTitle.filter((v) => v.name === type)[0].threshold
+                    data[0].threshold
                   } онооноос дээш авбал энэ эмгэгтэй байх өндөр магадлалтай. Гэвч энэхүү тест таныг бүрэн оношилж чадахгүй учраас өндөр оноо авбал та битгий санаа зовоорой.`
                 : ` You are likely to have this condition if you score more than ${
-                    testTitle.filter((v) => v.name === type)[0].threshold
-                  }. However, as this is not an official diagnosis but rather a tool to calcute the amount of symptoms you show, you are recommended to take this result with a whole lot of salt.`}
+                    data[0].threshold
+                  }. However, as this is not an official diagnosis but rather a tool to calculate the amount of symptoms you show, you are recommended to take this result with a whole lot of salt.`}
             </p>
           </div>
         </div>
         <div className="flex flex-col items-center text-blue-800 justify-center p-5">
           <p className="my-7 md:mt-16 text-sky-950 font-bold text-4xl">
-            {testTitle.filter((v) => v.name === type)[0].title}
+            {data[0].title}
           </p>
           <div className="">
-            {data.map((val, ind) => {
+            {data[0].questions.map((val, ind) => {
               return (
                 <div key={ind} className="border-b border-gray-300 mb-4 pb-4">
                   <div className="flex gap-1">
@@ -102,7 +127,7 @@ export default function Test() {
                       {ind + 1}.
                     </p>
                     <p className="text-blue-800 mb-2 font-semibold">
-                      {val.question}
+                      {val.questions}
                     </p>
                   </div>
 

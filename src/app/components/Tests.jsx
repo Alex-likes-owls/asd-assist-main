@@ -5,7 +5,7 @@ export const Tests = ({ data }) => {
   return (
     <Link
       className="group flex h-[600px] flex-col justify-evenly relative overflow-hidden items-center md:w-[30%] bg-white shadow-lg hover:bg-indigo-100 mb-5 text-center rounded-3xl"
-      href={`/test?type=${data.name}`}
+      href={`/test?type=${data.title}`}
     >
       <div className="w-44 h-44 bg-blue-50 rotate-45 absolute top-20 -left-24 group-hover:rotate-[225deg] transition-all duration-500"></div>
       <div className="w-44 h-44 bg-blue-50 rotate-45 absolute top-20 -right-24 group-hover:rotate-[-225deg] transition-all duration-500"></div>

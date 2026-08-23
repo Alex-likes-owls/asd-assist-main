@@ -13,7 +13,7 @@ let cardData = [
   {
     id: 1,
     title: "Hyperfixations",
-    imageSrc: "/Sonic-Logo.png",
+    imageSrc: "/sonk.png",
     imageId:
       "(Sonic The Hedgehog, owned by SEGA, is a franchise known for its overwhelmingly large amount of autistic fans)",
     description:
@@ -153,7 +153,7 @@ let mongcardData = [
   {
     id: 1,
     title: "Гиперфикс",
-    imageSrc: "/Sonic-Logo.png",
+    imageSrc: "/sonk.png",
     imageId: "(SEGA-ийн Соник нь олон аутизмтай сонирхогчидтойгоороо алдартай)",
     description:
       "Гиперфикс нь шоу, кино зэрэгт хэдэн сар донтох гэсэн утгатай бол энэ нь зөвхөн аутизмын шинж тэмдэг үү эсвэл хүн бүхэн ийм байдаг уу? Сошиал медиа үгийг түгээмэл хэрэглэж, утгыг нь алдуулсан тул хэлэхэд хэцүү байдаг.",

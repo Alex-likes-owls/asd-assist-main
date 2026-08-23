@@ -8,6 +8,7 @@ import { Card } from "../components/Card";
 import { Tests } from "../components/Tests";
 import { useSelector } from "react-redux";
 import { FaSearch } from "react-icons/fa";
+import axios from "axios";
 
 export default function BlogTest() {
   const searchParams = useSearchParams();
@@ -19,11 +20,24 @@ export default function BlogTest() {
 
   useEffect(() => {
     if (t === "articles") {
-      setData(toggle ? mongpagesData[1].arr : pagesData[1].arr);
-      setAll(toggle ? mongpagesData[1].arr : pagesData[1].arr);
+      axios.get("api/createA").then((res) => {
+        if (res.status === 200) {
+          // setData(res.data.mn);
+          setData(toggle ? res.data.mn : res.data.en);
+          setAll(toggle ? res.data.mn : res.data.en);
+        }
+      });
+      // setData(toggle ? mongpagesData[1].arr : pagesData[1].arr);
+      // setAll(toggle ? mongpagesData[1].arr : pagesData[1].arr);
     } else {
-      setData(toggle ? mongpagesData[2].arr : pagesData[2].arr);
-      setAll(toggle ? mongpagesData[2].arr : pagesData[2].arr);
+      axios.get("api/create").then((res) => {
+        if (res.status === 200) {
+          // setData(res.data.mn);
+          setData(toggle ? res.data.mn : res.data.en);
+          setAll(toggle ? res.data.mn : res.data.en);
+        }
+      });
+      // setData(toggle ? mongpagesData[2].arr : pagesData[2].arr);
     }
   }, [t, toggle]);
   if (!data) {
@@ -82,8 +96,10 @@ export default function BlogTest() {
             onChange={(e) =>
               setData(
                 all.filter((obj) =>
-                  obj.title.toLowerCase().includes(e.target.value.toLowerCase())
-                )
+                  obj.title
+                    .toLowerCase()
+                    .includes(e.target.value.toLowerCase()),
+                ),
               )
             }
           />
@@ -101,7 +117,10 @@ export default function BlogTest() {
                 setPopdata={setPopdata}
               />
             );
-          } else return <Tests data={val} key={ind} />;
+          } else {
+            // console.log(val);
+            return <Tests data={val} key={ind} />;
+          }
         })}
       </div>
     </div>
