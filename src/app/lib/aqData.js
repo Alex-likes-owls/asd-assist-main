@@ -47,7 +47,7 @@ let aqData = [
   {
     id: 2,
     question:
-      " I find it easy to 'read between the lines' when someone is talking to me.",
+      "I find it easy to 'read between the lines' when someone is talking to me.",
     choices: [
       {
         answer: "Definitely agree",
@@ -272,7 +272,7 @@ let mongaqData = [
   },
   {
     id: 2,
-    question: " Бусдын хэлсэн үгсийн далд утгыг ойлгох амархан байдаг.",
+    question: "Бусдын хэлсэн үгсийн далд утгыг ойлгох амархан байдаг.",
     choices: [
       {
         answer: "Санал нийлж байна",
