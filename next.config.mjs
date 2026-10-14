@@ -9,6 +9,7 @@ const nextConfig = {
       "carescribe.io",
       "64.media.tumblr.com",
       "content.app-sources.com",
+      "images.unsplash.com",
     ],
   },
 };
