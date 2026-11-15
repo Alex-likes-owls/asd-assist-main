@@ -14,10 +14,10 @@ import { FaStar } from "react-icons/fa";
 export default function Home() {
   const toggle = useSelector((state) => state.counter.toggle);
   const [data, setData] = useState(pagesData);
-  
+
   // const getData = async =>() {
   //   const res
-  // } 
+  // }
 
   const [popdata, setPopdata] = useState(null);
 
@@ -76,6 +76,7 @@ export default function Home() {
                 ? " A website designed to debunk false stereotypes and spread awareness of Autistic Spectrum Disorder(ASD). Take some self-assessments, read some fun articles, and simply enjoy yourself."
                 : "Аутизмын хүрээний эмгэг (АХЭ)-ын буруу ойлголтуудыг үгүйсгэж, өвчний талаарх мэдээлэл түгээх зорилготой вэбсайт. Өөрийгөө аутизмтай эсэхээ шалгаж сонирхолтой тестүүд өгч, энэхүү өвчний тухай нийтлэлүүдийг уншиж үзээрэй."}
             </p>
+            <p className="text-blue-800 text-sm mt-1">(Art by Beyza Durmuş)</p>
           </div>
           <div className="relative flex justify-center items-center">
             <Image
